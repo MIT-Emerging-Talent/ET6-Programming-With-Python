@@ -90,83 +90,101 @@ history
 ```bash
 clear
 ```
+________________________________________________________________________
+Here is the Windows Command Prompt version written in the same style as your example:
 
-Windows CMD Equivalent Commands
-1. Help or Manual:
-In CMD, help provides a list of available commands or details about a specific command.
+```markdown
+# Command Line Interface
 
-cmd
-Copy code
+## What is CLI?
+
+> The Command Line Interface (CLI) is an editing environment that is text-based.
+> It uses specified text (known as commands) to interact with the computer and
+> perform numerous operations, including installing and working with programs.
+>
+> [https://www.freecodecamp.org/](https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/)
+
+## Basic Commands in Windows CMD
+
+`help` : to display a list of commands or show details about a specific command
+
+```cmd
 help <command>
 help dir
-2. Print Working Directory:
-Use cd without arguments to display the current directory.
+```
 
-cmd
-Copy code
+`cd` : to print the current working directory or change directories
+
+```cmd
 cd
-3. List Files and Directories:
-Use dir to list the contents of the current directory.
-
-cmd
-Copy code
-dir
-4. Change Directory:
-Use cd to move between directories. cd .. moves up one directory.
-
-cmd
-Copy code
 cd <directory-name>
+```
+
+`cd ..` : to move up one directory
+
+```cmd
 cd ..
-5. Create a Directory:
-Use mkdir to create a new directory.
+```
 
-cmd
-Copy code
+`dir` : to list the files and directories in the current directory
+
+```cmd
+dir
+```
+
+`mkdir` : to create a new directory (folder)
+
+```cmd
 mkdir <directory-name>
-6. Create a File:
-Windows CMD does not have a direct equivalent to touch. You can use echo to create a file or type nul to create an empty file.
+```
 
-cmd
-Copy code
+`echo` : to create a new file or print a string to the console
+
+```cmd
 echo. > <file-name>
-type nul > <file-name>
-7. Delete Files or Directories:
-Use del to delete files and rmdir to delete directories. Add /s to remove non-empty directories.
+echo Hello world!
+```
 
-cmd
-Copy code
+`type nul` : to create an empty file
+
+```cmd
+type nul > <file-name>
+```
+
+`del` : to delete files
+
+```cmd
 del <file-name>
+```
+
+`rmdir` : to delete directories (use `/s` to remove non-empty directories)
+
+```cmd
 rmdir <directory-name>
 rmdir /s <directory-name>
-8. Print Text to Console:
-Use echo to print a string to the console.
+```
 
-cmd
-Copy code
-echo Hello world!
-9. Display File Contents:
-Use type to print the contents of a file.
+`type` : to print the contents of files
 
-cmd
-Copy code
+```cmd
 type <file-name>
-10. Exit Command Prompt:
-Use exit to close the session.
+```
 
-cmd
-Copy code
+`exit` : to end a Command Prompt session
+
+```cmd
 exit
-11. Command History:
-CMD does not have a history command, but you can use the doskey /history command to view the session's history.
+```
 
-cmd
-Copy code
+`doskey /history` : to display a list of the commands you’ve used in the current session
+
+```cmd
 doskey /history
-12. Clear Screen:
-Use cls to clear the screen.
+```
 
-cmd
-Copy code
+`cls` : to clear the screen
+
+```cmd
 cls
-
+```
+```
