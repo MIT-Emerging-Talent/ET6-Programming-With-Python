@@ -203,8 +203,8 @@ len("ab")  # 2
 "abc"[2:]  # 'c'
 
 "abc"[:0]  # ''
-"abc"[:1]  # 'bc'
-"abc"[:2]  # 'c'
+"abc"[:1]  # 'bc'  no 'a'
+"abc"[:2]  # 'c'   no 'ab'
 
 "abc"[0:0]  # ''
 "abc"[0:1]  # 'a'
@@ -280,7 +280,8 @@ letters.append('d')
 print(letters) # ['b', 'c', 'd']
 
 # add an item to the beginning of the list
-letters.insert('a')
+letters.insert('a') # => error
+letters.insert('a',2) # insert(element, index)
 print(letters) # ['a', 'b', 'c', 'd']
 
 # get the length of a list
