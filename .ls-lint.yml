@@ -1,0 +1,16 @@
+ls:
+  .dir: snake_case
+  .*: snake_case
+  .md: snake_case | regex:[0-9A-Z\-]+
+  .txt: snake_case
+  .yml: snake_case
+
+ignore:
+  - .git
+  - .github
+  - .vscode
+  - venv
+  - .venv
+  - .ruff_cache
+  - .pytest_cache
+  - __pycache__

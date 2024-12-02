@@ -1,0 +1,22 @@
+{
+  "name": "workflows",
+  "version": "1.0.0",
+  "description": "examples, exercises and guides for the Workflows module at DeNepo",
+  "scripts": {
+    "format": "prettier --write ./",
+    "spell-check": "cspell  './**'",
+    "lint:md": "markdownlint --ignore node_modules --config ./.markdownlint.jsonc --fix ./ ",
+    "lint:css": "stylelint --fix './**/*.css' ",
+    "validate:html": "html-validate ./"
+  },
+  "author": "DeNepo",
+  "license": "MIT",
+  "devDependencies": {
+    "cspell": "^5.9.0",
+    "html-validate": "^5.2.0",
+    "markdownlint-cli": "^0.28.1",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "recommendations": [
+        // For Pair Programming
+        "MS-vsliveshare.vsliveshare",
+
+        // For Git & GitHub
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github",
+        "donjayamanne.githistory",
+
+        // For programming generally
+        "streetsidesoftware.code-spell-checker",
+        "leodevbro.blockman",
+        "alefragnani.project-manager",
+        "vscode-icons-team.vscode-icons",
+        "alefragnani.bookmarks",
+        "visualstudioexptteam.vscodeintellicode",
+        "aaron-bond.better-comments",
+        "christian-kohler.path-intellisense",
+        "usernamehw.errorlens",
+        "tamasfe.even-better-toml",
+
+        // For writing Markdown
+        "DavidAnson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-preview-github-styles",
+
+        // For writing Python
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "KevinRose.vsc-python-indent",
+        "njpwerner.autodocstring",
+        "LittleFoxTeam.vscode-python-test-adapter",
+        "ms-python.black-formatter",
+        "charliermarsh.ruff",
+        "oderwat.indent-rainbow",
+        "ms-python.debugpy",
+        "frhtylcn.pythonsnippets",
+
+        // For writing Notebooks
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+
+        // For working with data
+        "RandomFractalsInc.vscode-data-preview",
+        "mechatroner.rainbow-csv",
+        "mtxr.sqltools"
+    ]
+}
