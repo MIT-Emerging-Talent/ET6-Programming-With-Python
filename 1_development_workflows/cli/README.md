@@ -90,3 +90,83 @@ history
 ```bash
 clear
 ```
+
+Windows CMD Equivalent Commands
+1. Help or Manual:
+In CMD, help provides a list of available commands or details about a specific command.
+
+cmd
+Copy code
+help <command>
+help dir
+2. Print Working Directory:
+Use cd without arguments to display the current directory.
+
+cmd
+Copy code
+cd
+3. List Files and Directories:
+Use dir to list the contents of the current directory.
+
+cmd
+Copy code
+dir
+4. Change Directory:
+Use cd to move between directories. cd .. moves up one directory.
+
+cmd
+Copy code
+cd <directory-name>
+cd ..
+5. Create a Directory:
+Use mkdir to create a new directory.
+
+cmd
+Copy code
+mkdir <directory-name>
+6. Create a File:
+Windows CMD does not have a direct equivalent to touch. You can use echo to create a file or type nul to create an empty file.
+
+cmd
+Copy code
+echo. > <file-name>
+type nul > <file-name>
+7. Delete Files or Directories:
+Use del to delete files and rmdir to delete directories. Add /s to remove non-empty directories.
+
+cmd
+Copy code
+del <file-name>
+rmdir <directory-name>
+rmdir /s <directory-name>
+8. Print Text to Console:
+Use echo to print a string to the console.
+
+cmd
+Copy code
+echo Hello world!
+9. Display File Contents:
+Use type to print the contents of a file.
+
+cmd
+Copy code
+type <file-name>
+10. Exit Command Prompt:
+Use exit to close the session.
+
+cmd
+Copy code
+exit
+11. Command History:
+CMD does not have a history command, but you can use the doskey /history command to view the session's history.
+
+cmd
+Copy code
+doskey /history
+12. Clear Screen:
+Use cls to clear the screen.
+
+cmd
+Copy code
+cls
+
