@@ -1,0 +1,117 @@
+{
+  // https://vscode-docs.readthedocs.io/en/stable/customization/userandworkspace/#default-settings
+  //-------- Editor configuration --------
+
+  // Controls auto save of editors that have unsaved changes.: https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save
+  "files.autoSave": "onFocusChange",
+
+  // Format a file on save. A formatter must be available.
+  "editor.formatOnSave": true,
+
+  // Controls whether the editor should automatically format the pasted content. A formatter must be available.
+  "editor.formatOnPaste": true,
+
+  // Controls whether the editor should render indent quides
+  "editor.guides.indentation": true,
+
+  // Controls whether the editor should highlight the active indent guide.
+  "editor.guides.highlightActiveIndentation": true,
+
+  // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
+  "editor.tabSize": 2,
+
+  // Defines a default formatter which takes precedence over all other formatter settings. Must be the identifier of an extension contributing a formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Controls bracket pair colorization is enabled or not
+  "editor.bracketPairColorization.enabled": true,
+
+  // Controls whether bracket pair guides are enabled or not. (true, active, false)
+  "editor.guides.bracketPairs": "active",
+
+  // Controls whether horizontal bracket pair guides are enabled or not.
+  "editor.guides.bracketPairsHorizontal": "active",
+
+  // Controls whether the editor should highlight the active bracket pair.
+  "editor.guides.highlightActiveBracketPair": true,
+
+  // Controls whether the editor has linked editing enabled.
+  "editor.linkedEditing": true,
+
+  //-------- HTML configuration --------
+
+  // Enable/disable auto closing of HTML tags
+  "html.autoClosingTags": true,
+
+  // Configures if the built-in HTML language suggests HTML5 tags, properties and values.
+  "html.suggest.html5": true,
+
+  // Defines a default HTML formatter which takes precedence over all other formatter settings. Must be the identifier of an extension contributing a formatter
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  //-------- Emmet configuration --------
+
+  // Enables completion when you are writing Emmet appreveation.
+  "html-css-class-completion.enableEmmetSupport": true,
+
+  //-------- JavaScript configuration --------
+
+  // Enable/disable auto closing of JSX tags.
+  "javascript.autoClosingTags": true,
+
+  // Enable/disable auto import suggestions.
+  "javascript.suggest.autoImports": true,
+
+  // Enable/disable automatic updating of import paths when you rename or move a file in VS Code.
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Enable/disable suggestoins for paths in import statement and require calls. (change it to false to be able to use Path Intellisense extension)
+  "javascript.suggest.paths": false,
+
+  //-------- TypeScript configuration --------
+
+  // Enable/disable auto closing of JSX tags.
+  "typescript.autoClosingTags": true,
+
+  // Enable/disable auto import suggestions.
+  "typescript.suggest.autoImports": true,
+
+  // Enable/disable automatic updating of import paths when you rename or move a file in VS Code.
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Enable/disable suggestoins for paths in import statement and require calls. (change it to false to be able to use Path Intellisense extension)
+  "typescript.suggest.paths": false,
+
+  //-------- Work Bench configuration --------
+
+  // Controls whether a top border is drawn on tabs for editors that have unsaved changes.
+  "workbench.editor.highlightModifiedTabs": true,
+
+  //-------- Files configuration --------
+
+  // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
+  "files.trimFinalNewlines": true,
+
+  // When enabled, insert a new final line at the end of the file when saving it.
+  "files.insertFinalNewline": true,
+
+  //-------- Live Server configuration --------
+
+  // Set Custom Port Number of Live Server. Set 0 if you want random port.
+  "liveServer.settings.port": 5504,
+
+  //-------- Markdown configuration --------
+
+  // Enable path suggestoins while writing links in markdown files
+  "markdown.suggest.paths.enabled": true,
+
+  // Defines a default markdown formatter which takes precedence over all other formatter settings. Must be the identifier of an extension contributing a formatter
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+
+  // Enable/disable update table of contents on save
+  "markdown.extension.toc.updateOnSave": false
+}
