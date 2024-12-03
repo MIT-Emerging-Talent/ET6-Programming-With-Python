@@ -19,8 +19,15 @@ letters.append("c")
 
 letters_reference = letters
 
-letters_reference.append("d")
+letters_reference.append("d") 
+'''
+ The variables "letters" and "letter_reference" hold the same value that is ["a","b","c","d"] because letter_reference is
+ essentially a side effect of letters. Both letter_reference and letters point to the same reference in memory, meaning
+ any changes to one will directly affect the other. But letters_copy is having a different value ["a","b","c","d","e"],
+ letters.copy() creates a new list object with the same contents as the original modifying this new list does not
+ affect the original list because they are stored at different memory locations
 
+'''
 letters_copy = letters.copy()
 
 letters_copy.append("e")
