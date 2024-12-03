@@ -3,20 +3,21 @@
 A reference for all the Python syntax and language features you need for Python
 Self-Study 1.
 
-- [Comments](#comments)
-- [Data Types](#data-types)
-- [Operators](#operators)
-- [assertions](#assertions)
-- [String Manipulation](#string-manipulation)
-- [Printing](#printing)
-- [Variables](#variables)
-- [Lists](#lists)
-- [Input](#input)
-- [Conditionals](#conditionals)
-- [While Loops](#while-loops)
-- [For-In Loops](#for-in-loops)
-- [Functions](#functions)
-- [Pass](#pass)
+- [Just Enough Python: Cheat Sheet](#just-enough-python-cheat-sheet)
+  - [Comments](#comments)
+  - [Data Types](#data-types)
+  - [Operators](#operators)
+  - [Assertions](#assertions)
+  - [String Manipulation](#string-manipulation)
+  - [Printing](#printing)
+  - [Variables](#variables)
+  - [Lists](#lists)
+  - [Input](#input)
+  - [Conditionals](#conditionals)
+  - [While Loops](#while-loops)
+  - [For-In Loops](#for-in-loops)
+  - [Functions](#functions)
+  - [Pass](#pass)
 
 ---
 
@@ -203,8 +204,8 @@ len("ab")  # 2
 "abc"[2:]  # 'c'
 
 "abc"[:0]  # ''
-"abc"[:1]  # 'a'
-"abc"[:2]  # 'ab'
+"abc"[:1]  # 'bc'
+"abc"[:2]  # 'c'
 
 "abc"[0:0]  # ''
 "abc"[0:1]  # 'a'
@@ -308,12 +309,19 @@ Programmers can pass string data into your programs using `input`.
 # --- input ---
 
 # allows the user to enter text
-user_input = input("enter some text:\n")
+user_variable = input("enter some text:\n")
+# stores a value in terms of a string no matter what value you give it
 
 # --- output ---
 
-# prints a message but does not take user input
-print('thank you for this text: ' + user_input)
+# This program prints a message but does not ask for 
+#a new text to be stored in  the user_variable.Instead,
+#it simply concatenates the string "thank you for this text:" 
+# with the previously stored value inside user_variable.
+# This works because the stored value is a string.
+
+print('thank you for this text: ' + user_variable)
+
 ```
 
 [TOP](#just-enough-python-cheat-sheet)
