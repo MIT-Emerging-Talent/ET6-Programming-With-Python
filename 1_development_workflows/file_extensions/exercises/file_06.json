@@ -1,0 +1,5 @@
+{
+  "language": "en",
+  "words": ["asdf", "hackyourfuture", "monospace", "Precourse"],
+  "ignorePaths": ["node_modules/**", "**/*.json", "**/*.mp4", "**/*.svg"]
+}
