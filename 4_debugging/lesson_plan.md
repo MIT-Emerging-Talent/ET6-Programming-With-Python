@@ -134,7 +134,7 @@ class: middle, center
 
 ### Fixing Bugs: _Rubber Ducky_
 
-[![rubber ducky](./.assets/rubber-ducky.png)](https://rubberduckdebugging.com)
+[![rubber ducky](./.assets/rubber_ducky.png)](https://rubberduckdebugging.com)
 
 ---
 

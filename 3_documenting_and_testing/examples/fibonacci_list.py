@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on XX XX XX
+A module for generating lists of Fibonacci numbers
 
+Module contents:
+    - fibonacci_list: generates a list of n fibonacci numbers.
+
+Created on XX XX XX
 @author: Evan Cole
 """
 
@@ -33,6 +37,10 @@ def fibonacci_list(sequence_length: int) -> list[int]:
         sequence_length: int, greater than or equal to zero
 
     Returns -> list[int] with the first n numbers of the Fibonacci sequence
+
+    Raises:
+        AssertionError: if the argument is not an integer
+        AssertionError: if the argument is less than 0
 
     >>> fibonacci_list(0)
     []

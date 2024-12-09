@@ -2,13 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 A module for counting vowels in a string.
-This is part of the debugging exercise series focusing on buggy tests.
 
 Module contents:
-    - count_vowels: Counts how many vowels are in a string
+    - count_vowels: counts the number of vowels in a string.
 
-Created on 2024-12-06
-Author: Claude AI
+Created on XX XX XX
+@author: Evan Cole + Claude AI
 """
 
 def count_vowels(text: str) -> int:
@@ -18,6 +17,9 @@ def count_vowels(text: str) -> int:
         text: str, the input string to check
         
     Returns -> int: number of vowels in the text
+
+    Raises:
+        AssertionError: if the argument is not a string
     
     >>> count_vowels("hello")
     2

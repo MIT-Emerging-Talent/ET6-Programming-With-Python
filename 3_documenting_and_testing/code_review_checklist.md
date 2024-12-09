@@ -30,12 +30,22 @@ the details become a habit.
 
 ## Function Docstring
 
+<<<<<<< HEAD
 - [x] behavior description
 - [x] parameter description
 - [x] return value description
 - [x] include any assumptions
 - [x] include 3 or more (passing!) doctests
 - [x] include 1-2 use cases (if necessary)
+=======
+- [ ] behavior description
+- [ ] parameter description
+- [ ] return value description
+- [ ] include any assumptions
+- [ ] include 3 or more (passing!) doctests
+- [ ] assertions are documented (if there are any)
+- [ ] include 1-2 use cases (if necessary)
+>>>>>>> 36d96bac5f122fb14e0d03bb0e4e045550a6dccd
 
 ## Function Implementation
 

@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 A module for list manipulation focusing on alternating elements.
-This is part of the debugging exercise series focusing on buggy tests.
 
 Module contents:
     - alternate_elements: Creates a new list with every other element
@@ -34,4 +33,5 @@ def alternate_elements(items: list) -> list:
         []
     """
     assert isinstance(items, list), "input must be a list"
+    
     return items[::2]
