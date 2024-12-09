@@ -20,7 +20,7 @@ _07_or_ft = False or True
 _08_or_ff = False or False
 
 _09_not_t = not True
-_10_not_f = not True
+_10_not_f = not False
 
 # --- Number Operators ---
 
