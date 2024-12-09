@@ -6,36 +6,36 @@ the details become a habit.
 
 ## File Names
 
-- [ ] The file names match the function
-- [ ] Test file is named `/tests/test_file_name.py`
+- [x] The file names match the function
+- [x] Test file is named `/tests/test_file_name.py`
 
 ## Files
 
-- [ ] The file names match the function
-- [ ] Module header in each file
-- [ ] Module docstring in each file
+- [x] The file names match the function
+- [x] Module header in each file
+- [x] Module docstring in each file
 
 ## Unit Tests
 
-- [ ] The test class has a helpful name in PascalCase
-- [ ] The test class has a docstring
+- [x] The test class has a helpful name in PascalCase
+- [x] The test class has a docstring
 - Each unit test has
-  - [ ] A helpful name
-  - [ ] A clear docstring
-  - [ ] Only one assertion
-  - [ ] There is no logic in the unit test
-- [ ] All tests pass
-- [ ] (challenge) Tests for defensive assertions
-- [ ] (challenge) Tests for many boundary cases
+  - [x] A helpful name
+  - [x] A clear docstring
+  - [x] Only one assertion
+  - [x] There is no logic in the unit test
+- [x] All tests pass
+- [x] (challenge) Tests for defensive assertions
+- [x] (challenge) Tests for many boundary cases
 
 ## Function Docstring
 
-- [ ] behavior description
-- [ ] parameter description
-- [ ] return value description
-- [ ] include any assumptions
-- [ ] include 3 or more (passing!) doctests
-- [ ] include 1-2 use cases (if necessary)
+- [x] behavior description
+- [x] parameter description
+- [x] return value description
+- [x] include any assumptions
+- [x] include 3 or more (passing!) doctests
+- [x] include 1-2 use cases (if necessary)
 
 ## Function Implementation
 

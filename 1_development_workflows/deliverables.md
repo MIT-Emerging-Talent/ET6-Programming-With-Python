@@ -7,9 +7,9 @@ interests, and anything else you'd like to share.
 
 ## Checklist
 
-- [ ] You created your Profile README repository using
+- [x] You created your Profile README repository using
       [the template `username` repository](https://github.com/MIT-Emerging-Talent/username)
-- [ ] All of the CI checks pass under the Actions tab
+- [x] All of the CI checks pass under the Actions tab
 
 ## Suggested Study
 

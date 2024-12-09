@@ -10,18 +10,18 @@ using your favorite online resources in a language you are comfortable with. You
 do not need to master them before the workshop, we will learn how to study
 Python for mastery in the workshop:
 
-- [ ] **Comments**: `# a comment`,
+- [x] **Comments**: `# a comment`,
       `""" a multi-line string used as a comment """`
-- [ ] **Input/Output**: `input()`, `print()`
-- [ ] **Variables**
-- [ ] **Data Types**: `str`, `bool`, `int`, `float`, `isinstance()`
-- [ ] **Basic Operators**: `==`, `!==`, `>=`, `<=`, `<`, `>`, `and`, `or`,
+- [x] **Input/Output**: `input()`, `print()`
+- [x] **Variables**
+- [x] **Data Types**: `str`, `bool`, `int`, `float`, `isinstance()`
+- [x] **Basic Operators**: `==`, `!==`, `>=`, `<=`, `<`, `>`, `and`, `or`,
       `not`, `+`, `-`
-- [ ] **Asserting**: `assert`
-- [ ] **String Manipulation**: indexed access, slicing, `.length`, `.replace()`,
+- [x] **Asserting**: `assert`
+- [x] **String Manipulation**: indexed access, slicing, `.length`, `.replace()`,
       `.upper()`, `.lower()`, `.strip()`, `len()`, `in`
-- [ ] **Iteration**: `range()`
-- [ ] **Control Flow**: conditionals, while loops, for-in loops
-- [ ] **Functions**: declaring, calling, parameters vs. arguments, return values
-- [ ] **Lists**: indexed access, slicing, `.append()`, `.insert()`, `len()`
-- [ ] **Pass**: write `pass` in a block to leave it empty without a syntax error
+- [x] **Iteration**: `range()`
+- [x] **Control Flow**: conditionals, while loops, for-in loops
+- [x] **Functions**: declaring, calling, parameters vs. arguments, return values
+- [x] **Lists**: indexed access, slicing, `.append()`, `.insert()`, `len()`
+- [x] **Pass**: write `pass` in a block to leave it empty without a syntax error
