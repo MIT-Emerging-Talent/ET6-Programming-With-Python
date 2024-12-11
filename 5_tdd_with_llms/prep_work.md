@@ -1,19 +1,15 @@
 # Prep Work
 
-Read through these two documents:
+This chapter's lesson plan will focus on Test-Driven Development _without_ the help of AI, why?  because:
 
-- [Test-Driven Development](./test_driven_development.md)
-- [CoAIthoring Workflow](./coaithoring_workflow.md)
+- You should first understand TDD alone before adding LLMs
+- Not everyone has access to LLMs, but everyone can practice TDD
 
-Read through the examples:
+To prepare for the workshop, read through these two documents: [Test-Driven Development](./test_driven_development.md), [Workflow without LLMs](./workflow_without_llm.md)
 
-- `examples/stepped_*`: These folders contains worked examples of developing
-  with an LLM. Each of the files is a snapshot of a different step the
-  development process. The final product is in one file, not two files like
-  yours should be.
-- `examples/separated_*`: This folder contains examples of the finished product
-  _after_ you have developed a solution with an LLM. You should notice that the
-  finished code is no different from what you learned in Documenting and
-  Testing, that's on purpose! LLMs may improve your development _process_, but
-  they do not change the need for well tested, documented, and understandable
-  code.
+---
+
+You can explore integrating LLMs into your workflow after the workshop using these resources:
+
+- [Workflow with LLM](./workflow_with_llm.md) + [video guide](https://mit-emerging-talent.github.io/ET6-Programming-With-Python/5_tdd_with_llms/workflow_example.mp4)
+- [`filter_and_sort_dictionaries_with_llm](./examples/filter_and_sort_dictionaries_with_llm/): This has snapshots of different steps in the development process. The final product is in one file for demonstration, yours should be separated into two files.

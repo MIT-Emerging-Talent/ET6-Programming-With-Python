@@ -70,9 +70,12 @@ master all of the skills introduced in this workshop.
 
 ### Function Testing
 
-- 🥚 You can use a sandbox file to informally explore a function's _behavior_.
 - 🥚 You can read and run unit tests to understand a function's _behavior_.
-- 🥚 You can import a module in your console and run its doctest.
-- 🥚 You can write a simple suite of unit tests with some boundary cases.
+- 🥚 You can step through test cases in a debugger to understand a function's _strategy & implementation_.
+  - open the function and tests side-by-side
+  - place a breakpoint on the first line of the function
+  - open the VSCode debugger pane
+  - launch the `ET: Debug Python (unittest)` process
+- 🥚 You can write a suite of unit tests with some boundary cases.
 - 🐣 You can write a full suite of unit tests including comprehensive boundary
-  cases, assertions checks, and glass box tests.
+  cases and assertions checks.

@@ -279,8 +279,8 @@ letters = ['b', 'c']
 letters.append('d')
 print(letters) # ['b', 'c', 'd']
 
-# add an item to the beginning of the list
-letters.insert('a')
+# insert an item at a specific index in the list
+letters.insert(0,'a')
 print(letters) # ['a', 'b', 'c', 'd']
 
 # get the length of a list
@@ -307,13 +307,15 @@ Programmers can pass string data into your programs using `input`.
 ```py
 # --- input ---
 
-# allows the user to enter text
-user_input = input("enter some text:\n")
+# allows the user to enter a string value for the program to use
+string_from_user = input("enter some text:\n")
 
 # --- output ---
 
-# prints a message but does not take user input
-print('thank you for this text: ' + user_input)
+appreciation = 'thank you for this text: ' + string_from_user
+
+# prints a message, but does not accept new input from the user
+print(appreciation)
 ```
 
 [TOP](#just-enough-python-cheat-sheet)

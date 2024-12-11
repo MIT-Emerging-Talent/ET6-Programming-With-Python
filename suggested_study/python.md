@@ -33,6 +33,13 @@
   - `$ python -m trace -c path/to/file.py`
 - [The VSCode Debugger](https://code.visualstudio.com/docs/python/debugging)
 
+## Errors
+
+- [Syntax vs. Semantics in Programming Languages (Udacity)](https://www.youtube.com/watch?v=vP-mn62EF0o)
+- [Syntax, Runtime and Logical Errors in Python (Learn Learn Scratch Tutorials)](https://www.youtube.com/watch?v=ToPP5UGgJUM)
+- [Syntax, Runtime and Semantic Errors (Omar Shaaban)](https://www.youtube.com/watch?v=bN0oGYD3z60) - _"Semantic errors" in this video are what we call Bugs_
+- [Python Error Types (Homawccc)](https://www.youtube.com/watch?v=Kf6dvup_6Mo)
+
 ## Tutorials and Courses
 
 - [Computational Core: Introduction to Python (KSU)](https://textbooks.cs.ksu.edu/intro-python/): A great course with live exercises, program visualization (_Python Tutor_) and worked examples.

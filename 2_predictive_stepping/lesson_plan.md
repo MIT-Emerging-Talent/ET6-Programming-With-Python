@@ -167,9 +167,18 @@ _(live demo)_
 
 class: middle, center
 
-## Predictive Stepping
+## Predictive Stepping:  _demo_
 
-### _demo_
+Before stepping:
+
+- Which line will execute next?
+- What will happen?
+- What will will change in memory?
+
+After stepping:
+
+- Were your predictions correct?
+- if not, what did you not understand?
 
 ---
 

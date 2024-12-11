@@ -30,7 +30,7 @@ class: middle
 
 - **Breakout Groups 2: _./exercises_**
 
-- **Study Suggestion**
+- **Study Suggestion: _Analyze -> Remix -> Write_**
 
 - **Share Learnings + Discussion**
 
@@ -57,7 +57,7 @@ class: middle
 
 class: middle
 
-## Behavior, Strategy, Implementation
+## [Behavior, Strategy, Implementation](./behavior_strategy_implementation.md)
 
 - Naming things!
 
@@ -126,6 +126,19 @@ class: middle, center
 ## Strategy: _flowchart_
 
 <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blanks"><img alt="Flowchart" src="./.assets/flowchart.png" height="50%"  width="50%"></a>
+
+---
+class: middle, center
+
+## Strategy: _plain language_
+
+If the string is empty or has 1 character, it's a palindrome.
+
+If it's longer than 2 characters, I will compare the first and last characters.
+If they are different, it's not a palindrome.
+If they are the same it might be a palindrome so ...
+
+I will remove the first and last characters and repeat this process.
 
 ---
 
@@ -207,18 +220,28 @@ class: middle
 
 ## Code Review: _demo_
 
-- Open the [code review checklist](./code_review_checklist.md) and work from top to bottom
+- **Open the [code review checklist](./code_review_checklist.md) and work from top to bottom**
 
-- Run tests: `$ python -m unittest path/to/tests/test_file.py`
+_Rely on code quality automations_
 
-- Print the docstring: `$ python -m pydoc path/to/file.py`
+**Print the docstring**: `$ python -m pydoc path/to/file.py`
 
-- Run the doctests: `$ python -m doctest -v path/to/file.py`
-  
-- Check linting:
-  - with VSCode extensions
-  - `$ ruff check ./path/to/file.py`
-  - `$ pylint ./path/to/file.py`
+**Run the doctests**: `$ python -m doctest -v path/to/file.py`
+
+**Run the unit tests**: `$ python -m unittest path/to/tests/test_file.py`
+
+**Step through the tests in the debugger**:  
+
+- open the function and tests side-by-side
+- place a breakpoint in the first line of the function
+- open the VSCode debugger pane
+- start `ET: Debug Python (unittest)`
+
+**Lint the code**:
+
+- _with VSCode extensions_
+- `$ ruff check ./path/to/file.py`
+- `$ pylint ./path/to/file.py`
 
 ---
 
@@ -240,21 +263,29 @@ class: middle, center
 
 class: middle, center
 
-## Study Suggestion
+## Study Suggestion: _Analyze -> Remix -> Write_
 
-### _Learn by forfeiting!_
+- Choose any exercise platform, or try them all.
+
+- Forfeit!  Learn from others, not from a blank page
+
+- Easy is good!  Struggle in the _right_ way
+  - choose _behaviors_ you can easily understand
+
+- Study a mix of similar and different solutions
+  - compare different _strategies_ and _implementations_
+
+- Review: test -> step through -> document
+
+- Remix your own solutions based on others you studied
+
+- Finally, go find a similar challenge and write your own solutions!
 
 ---
 
 class: middle, center
 
-## Learnings + Discussion
-
----
-
-class: middle, center
-
-## Q & A
+## Discussion, Q & A
 
 ---
 
