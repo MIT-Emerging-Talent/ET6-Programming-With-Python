@@ -28,7 +28,7 @@ def reverse_words(text: str) -> str:
     ''
     """
     assert isinstance(text, str), "input must be a string"
-    
+
     words = text.split(" ")
     result = ""
     
