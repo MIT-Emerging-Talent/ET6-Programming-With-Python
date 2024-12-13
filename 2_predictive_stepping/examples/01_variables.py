@@ -35,6 +35,9 @@ hand_thing = "glove"
 name = "Poalia"
 
 # using a variable without first assigning a value will throw an error
-toadstool
+# assigning value to toadstool variable
+toadstool = "At type of mushroom"
+
+print(toadstool)
 
 print("end of script")
