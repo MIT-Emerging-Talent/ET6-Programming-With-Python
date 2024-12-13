@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Test module for find_longest function.
+Test module for count_words function.
 Contains correct tests to help identify bugs in the implementation.
 
 Test categories:
@@ -15,59 +15,28 @@ Author: Claude AI
 
 import unittest
 
-from ..find_longest import find_longest
+from ..count_words import count_words
 
-class TestFindLongest(unittest.TestCase):
-    """Test suite for the find_longest function"""
 
-    # Standard test cases
-    def test_increasing_lengths(self):
-        """It should find longest in increasing lengths"""
-        self.assertEqual(find_longest(['a', 'bb', 'ccc']), 'ccc')
-    
-    def test_decreasing_lengths(self):
-        """It should find longest in decreasing lengths"""
-        self.assertEqual(find_longest(['ccc', 'bb', 'a']), 'ccc')
-    
-    def test_mixed_lengths(self):
-        """It should find longest in mixed lengths"""
-        self.assertEqual(
-            find_longest(['hi', 'hello', 'hey', 'howdy']),
-            'hello'
-        )
-    
-    # Edge cases
-    def test_empty_string_first(self):
-        """It should handle empty string at start"""
-        self.assertEqual(find_longest(['', 'a', 'bb']), 'bb')
-    
-    def test_empty_string_middle(self):
-        """It should handle empty string in middle"""
-        self.assertEqual(find_longest(['a', '', 'bb']), 'bb')
-    
-    def test_all_empty(self):
-        """It should handle all empty strings"""
-        self.assertEqual(find_longest(['', '', '']), '')
-    
-    def test_equal_lengths(self):
-        """It should return first string when multiple are longest"""
-        self.assertEqual(find_longest(['abc', 'def', 'ghi']), 'abc')
-    
-    # Defensive tests
-    def test_empty_list(self):
-        """It should raise ValueError for empty list"""
-        with self.assertRaises(ValueError):
-            find_longest([])
-    
-    def test_non_list_input(self):
-        """It should raise AssertionError for non-list input"""
-        with self.assertRaises(AssertionError):
-            find_longest("hello")
-    
-    def test_non_string_items(self):
-        """It should raise AssertionError if list contains non-strings"""
-        with self.assertRaises(AssertionError):
-            find_longest(['hello', 42, 'world'])
+class TestCountWords(unittest.TestCase):
+    """Test the count_words function"""
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_empty_string(self):
+        """It should return 0 for empty string"""
+        self.assertEqual(count_words(""), 0)
+
+    def test_one_word(self):
+        """It should count a single word"""
+        self.assertEqual(count_words("hello"), 1)
+
+    def test_two_words(self):
+        """It should count two words"""
+        self.assertEqual(count_words("hello world"), 2)
+
+    def test_multiple_spaces(self):
+        """It should handle multiple spaces between words"""
+        self.assertEqual(count_words("hello   world"), 2)
+
+    def test_only_spaces(self):
+        """It should return 0 for string with only spaces"""
+        self.assertEqual(count_words("   "), 0)

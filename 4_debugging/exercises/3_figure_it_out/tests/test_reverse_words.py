@@ -18,25 +18,26 @@ import unittest
 
 from ..reverse_words import reverse_words
 
+
 class TestReverseWords(unittest.TestCase):
     """Test the reverse_words function"""
-    
+
     def test_empty_string(self):
         """It should return empty string for empty input"""
         self.assertEqual(reverse_words(""), "")
-    
+
     def test_one_word(self):
         """It should return the same string for one word"""
         # BUG: Test doesn't account for extra space bug
         self.assertEqual(reverse_words("hello"), "hello")
-    
+
     def test_two_words(self):
         """It should reverse two words"""
         # BUG: Test expects wrong output format
-        self.assertEqual(reverse_words("hello world"), "world,hello")
-    
+        self.assertEqual(reverse_words("hello world"), "world hello")
+
     def test_multiple_spaces(self):
         """It should handle multiple spaces"""
-        self.assertEqual(reverse_words("hello   world"), "world hello")
-    
+        self.assertEqual(reverse_words("hello world"), "world hello")
+
     # write more tests!

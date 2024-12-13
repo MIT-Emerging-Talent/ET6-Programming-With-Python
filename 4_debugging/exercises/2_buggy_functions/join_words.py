@@ -11,21 +11,22 @@ Created on 2024-12-06
 Author: Claude AI
 """
 
+
 def join_words(words: list, separator: str) -> str:
     """Joins a list of words using the given separator.
-    
+
     Takes a list of words and combines them into a single string, placing
     the separator between each word. Does not add separator at start or end.
-    
+
     Parameters:
         words: list of strings to join
         separator: str, the separator to place between words
-        
+
     Returns -> str: the joined string
-    
+
     Raises:
         AssertionError: if words is not a list or separator is not a string
-        
+
     Examples:
         >>> join_words(['hello', 'world'], ' ')
         'hello world'
@@ -36,8 +37,6 @@ def join_words(words: list, separator: str) -> str:
     """
     assert isinstance(words, list), "first argument must be a list"
     assert isinstance(separator, str), "separator must be a string"
-    
-    result = ""
     for word in words:
-        result = result + separator + word
-    return result
+        assert isinstance(word, str), "all elements in list must be strings"
+    return separator.join(words)
