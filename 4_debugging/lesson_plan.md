@@ -22,6 +22,8 @@ class: middle
 
 - **Learning Objectives**
 
+- **Zone of Proximal Development (_ZPD_)**
+
 - **Errors vs. Bugs**
 
 - **Avoiding Bugs**
@@ -37,6 +39,8 @@ class: middle
 class: middle
 
 ## Learning Objectives
+
+- You can use the ZPD model to choose which challenges to study
 
 - You can describe the difference between an _error_ and a _bug_
 
@@ -57,6 +61,32 @@ class: middle
   - Keep a Bug Log!
 
 - For self-study: _[objectives in the README](./README.md#learning-objectives)_
+
+---
+
+class: middle, center
+
+## Zone of Proximal Development (_ZPD_)
+
+[![zone of proximal development](../.assets/zone_of_proximal_development.png)](https://mavink.com/explore/Zone-of-Proximal-Development-Infographic)
+
+---
+
+class: middle
+
+## ZPD: _study advice_
+
+<a href="https://mavink.com/explore/Zone-of-Proximal-Development-Infographic" target="_blanks"><img alt="zone of proximal development" src="../.assets/zone_of_proximal_development.png" height="50%"  width="50%"></a>
+
+- You have of two separate ZPDs as you learn to program
+  - The **difficulty of challenges** you study
+  - The **debugging process** you use to study challenges
+
+- Focus on your **debugging process**, not hard challenges
+  - Repeat the _entire process_ with _good practices_ on easy challenges
+  - Not fewer times with harder challenges with bad practices
+
+- Focus on coding challenges in your _can do now_ zone
 
 ---
 

@@ -34,3 +34,11 @@ def reverse_words(text: str) -> str:
     result.reverse()
 
     return " ".join(result)
+
+    words = text.split(" ")
+    result = ""
+
+    for word in words:
+        result = " " + word + result
+
+    return result
