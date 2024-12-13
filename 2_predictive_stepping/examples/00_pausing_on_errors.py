@@ -15,6 +15,7 @@ b = "2"
 
 # the error message will appear below this line
 #   and the values in memory can help you understand what went wrong
-c = a + b
+# converting b into an integer
+c = a + int(b)
 
 print(c)
