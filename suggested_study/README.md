@@ -65,6 +65,7 @@ know something we're missing, send a Pull Request! All languages are welcome.
   In this video, we will walk through the basics of Markdown such as creating
   headers, lists, tables, etc. We will use Visual Studio Code (VSCode) which
   allows us to see a live preview of our Markdown as we type in code.
+- [A list of all the MarkdownLint errors and how to fix them](https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md)
 
 ## READMEs
 

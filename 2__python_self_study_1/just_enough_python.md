@@ -203,8 +203,8 @@ len("ab")  # 2
 "abc"[2:]  # 'c'
 
 "abc"[:0]  # ''
-"abc"[:1]  # 'bc'  no 'a'
-"abc"[:2]  # 'c'   no 'ab'
+"abc"[:1]  # 'a'  no 'a'
+"abc"[:2]  # 'ab'   no 'ab'
 
 "abc"[0:0]  # ''
 "abc"[0:1]  # 'a'
@@ -308,13 +308,15 @@ Programmers can pass string data into your programs using `input`.
 ```py
 # --- input ---
 
-# allows the user to enter text
-user_input = input("enter some text:\n")
+# allows the user to enter a string value for the program to use
+string_from_user = input("enter some text:\n")
 
 # --- output ---
 
-# prints a message but does not take user input
-print('thank you for this text: ' + user_input)
+appreciation = 'thank you for this text: ' + string_from_user
+
+# prints a message, but does not accept new input from the user
+print(appreciation)
 ```
 
 [TOP](#just-enough-python-cheat-sheet)

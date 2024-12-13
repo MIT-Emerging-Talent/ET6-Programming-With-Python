@@ -15,7 +15,8 @@ interests, and anything else you'd like to share.
 
 > Here are some ideas to help with this workshop's deliverable.  Don't see what you need here?  Look through the rest of [Suggested Study](../suggested_study/) or search what you need online.
 
-Writing Markdown in VSCode: [Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo), [James Q Quick](https://www.youtube.com/watch?v=pTCROLZLhDM).
+- Writing Markdown in VSCode: [Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo), [James Q Quick](https://www.youtube.com/watch?v=pTCROLZLhDM).
+- [A reference of all the MarkdownLint errors and how to fix them.](https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md)
 
 Get inspired for your Profile README
 

@@ -40,7 +40,7 @@ then communicating with everyone involved to deliver quality software within
 your project's constraints. This diagram shows the different channels of
 communication in a simple Python program:
 
-![a program](./.assets/computers_and_developers.png)
+![a program](./.assets/what_is_programming.png)
 
 > PS. In the examples and exercises for this chapter you will be both the
 > developer and the user, running the program and interacting with it from
@@ -149,18 +149,29 @@ your study time and to measure your progress:
 
 ### Other Visualization Tools
 
+Other options besides the debugger in VSCode:
+
 - 🥚 You can use a trace table to manually execute a program with pencil and
   paper.
-- 🥚 You can use the built-in Python `trace` module from CLI to help understand
-  a script's execution:
-  - `$ python -m trace -t path/to/file.py`: prints each line as it's executed to
-    the console.
-  - `$ python -m trace -c path/to/file.py`: generates a new `.cover` file
-    indicating how many times each line of code was executed.
 - 🥚 You can use [Python Tutor](http://pythontutor.com/) to step through,
   visualize and predict program execution.
   - Python Tutor has a more approachable visualization than the VSCode Debugger,
     but can not handle large programs.
   - This does not replace VSCode as a code editor.
-- (optional) You can use [Thonny](https://thonny.org/) to write, step through,
+- 🐣 You can use the built-in Python `trace` module from CLI to help understand
+  a script's execution:
+  - `$ python -m trace -t path/to/file.py`: prints each line as it's executed to
+    the console.
+  - `$ python -m trace -c path/to/file.py`: generates a new `.cover` file
+    indicating how many times each line of code was executed.
+- 🐥 You can use the built-in python `pdb` module from CLI to step through a script in the interactive debugger:
+  - `$ python -m pdb path/to/file.py`: starts the script in pdb
+  - `(Pdb) step` steps to the next line
+  - `(Pdb) ll` prints the code surrounding your current line
+  - `(Pdb) pp <expression>` evaluates the expression and pretty-prints the result
+  - `(Pdb) where` prints the current callstack
+  - `(Pdb) help` prints the options available in the Python debugger
+  - `(Pdb) quit` quits the debugger
+    indicating how many times each line of code was executed.
+- (_optional_) You can use [Thonny](https://thonny.org/) to write, step through,
   visualize and debug small Python programs.

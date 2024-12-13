@@ -1,78 +1,300 @@
-# Lesson Plan
+class: middle, center
 
-## Workshop Overview _(all together)_
+<!-- this file is written for remark: https://github.com/gnab/remark/wiki -->
 
-> ~10 minutes
+# Documenting and Testing
 
-The workshop instructor will introduce the main concepts of this workshop:
+<br />
 
-- Introduce the workshop's
-  [learning objectives](./README.md#learning-objectives).
-- Discuss the difference between a function's
-  [behavior, strategy and implementation](./behavior_strategy_implementation.md).
+<img alt="Emerging Talent Logo" src="../.assets/emerging_talent_logo.png" height="50%"  width="50%">
 
-## Behavior, Strategy, Implementation _(small groups)_
+---
 
-> ~15 minutes
+class: middle, center
 
-Explore and discuss the examples in
-[behavior, strategy and implementation](./behavior-strategy-implementation.md).
+## Knowledge Sharing: _Slido_
 
-## Introduce the Exercises _(all together)_
+---
 
-> ~15 minutes
+class: middle
 
-- Each group will have 1 minute to share:
-  - One thing they couldn't understand
-  - One interesting thing they learned
-- Discuss why documenting and testing important.
-- The instructor does a guided walk through the `/examples` folder, reading and
-  running each file:
-  - `<module_name>.py`, `test_<module_name>.py`, `<module_name>_sandbox.py`
-  - How to study and run each file
-  - Demonstrate how to use the
-    [Code Review Checklist](./code-review-checklists.md)
-  - Demonstrate use the console to read docstrings and run doctests
-- Introduce the group exercise
+## Agenda
 
-## Document and Test the Mystery Functions _(small groups)_
+- **Learning Objectives**
 
-> ~30 minutes
+- **Behavior, Strategy, Implementation**
 
-You will work on the `/exercises` in small groups. You are not expected to
-finish all of the exercises during the workshop, you may not even finish all of
-the steps for one mystery function. That's ok! There are extra exercises so you
-can keept practicing after the workshop.
+- **Code Review Checklist**
 
-Study one mystery function at a time following these steps:
+- **Breakout Groups 1: _BSI + review ./examples_**
 
-1. Explore the mystery function using `<module_name>_sandbox.py`. :
-   - There are no wrong answers! Try passing all sorts of arguments until you
-     think you understand the function's _behavior_.
-2. Describe the function's behavior in `<module_name>.py`:
-   - Give the function a descriptive name and rename the files to match.
-   - Write type annotations for the function
-   - Write a first draft docstring, you can always update it later
-3. Write black box unit tests for the function in `test_<module_name>.py`:
-   - Ask yourself: _How can I break my program?_
-   - Write as many boundary cases as you can
-4. Study the function's code to understand its strategy:
-   1. Change the variable names to something helpful
-   1. Write comments when necessary to explain the function's strategy
-5. Take your code to the next level:
-   1. Write clear and helpful assertions in the function
-   1. Write unit tests for your assertions
-   1. Write glass box tests for the function's implementation
+- **Breakout Groups 2: _./exercises_**
 
-## Discussion _(all together)_
+- **Study Suggestion: _Analyze -> Remix -> Write_**
 
-> ~20 minutes
+- **Share Learnings + Discussion**
 
-Back together, you will have an informal discussion with the other groups and
-the workshop leader.
+- **Q & A**
 
-1. Each group will have 2-3 minutes to share:
-   - One thing they couldn't figure out
-   - One surprising thing they learned
-   - One thing they'd like to discuss with the full class
-2. Discuss!
+---
+
+class: middle
+
+## Learning Objectives
+
+- You begin to understand the difference between a function's:
+  - **Behavior**: _data in -> data out_
+  - **Strategy**: _algorithm_
+  - **Implementation**: _Python code_
+
+- You understand how a **code review checklist** can help you:
+  - Study someone else's code
+  - Write code that is easy for others to understand
+
+- For this week: _[objectives in the README](./README.md#learning-objectives)_
+
+---
+
+class: middle
+
+## [Behavior, Strategy, Implementation](./behavior_strategy_implementation.md)
+
+- Naming things!
+
+- Shared vocabulary for discussion
+
+- Helps you learn more from less code
+
+- Helps connect CS theory to applied programming
+
+- Helps transition between different _levels of abstraction_
+
+---
+
+class: middle, center
+
+## Behavior: _Black Box_
+
+<img alt="Behavior black box" src="./.assets/black_box.png" height="100%"  width="100%">
+
+---
+
+class: middle, center
+
+## Behavior: _sorting_
+
+### 4 2 3 7 → ■ →  2 3 4 7
+
+### 4 -2 8 0 20 → ■ → -2 0 4 8 20
+
+### 1 3 5 → ■ → 1 3 5
+
+---
+
+class: middle, center
+
+## Behavior: _change naming style_
+
+### snake_case → ■ → SnakeCase
+
+### routine → ■ → Routine
+
+### largest_in_list → ■ → LargestInList
+
+---
+
+class: middle
+
+## Strategy: _Algorithms_
+
+- There are many **strategies** for a single **behavior**
+
+- _Abstract_ representation of problem-solving approach
+
+- Avoids language-specific details (_side-effects, list methods..._)
+
+- Quicker and simpler for discussion than writing code
+
+- Support collaboration with non-technical stakeholders
+
+- Can be closer to the mathematics and CS
+
+---
+
+class: middle, center
+
+## Strategy: _flowchart_
+
+<a href="https://en.wikipedia.org/wiki/Algorithm" target="_blanks"><img alt="Flowchart" src="./.assets/flowchart.png" height="50%"  width="50%"></a>
+
+---
+class: middle, center
+
+## Strategy: _plain language_
+
+If the string is empty or has 1 character, it's a palindrome.
+
+If it's longer than 2 characters, I will compare the first and last characters.
+If they are different, it's not a palindrome.
+If they are the same it might be a palindrome so ...
+
+I will remove the first and last characters and repeat this process.
+
+---
+
+class: middle, center
+
+## Strategy: _pseudocode_
+
+```txt
+fibonnaci_list(int) -> list of ints
+    if int is zero
+        return an empty list
+    if int is one
+        return [0]
+
+    list = [0,1]
+    while list is shorter than int
+        add the last two numbers in the list
+        append the sum to the end of the list
+
+    return the list
+```
+
+---
+
+class: middle, center
+
+## Strategy: _formal notation_
+
+```text
+Let A = (a₁, ..., aₙ) be n comparable elements
+
+bubbleSort(A) = Bₙ(A)
+  
+where Bᵢ(A) = {
+    A                                   if i = 0
+    Bᵢ₋₁(swap₁,ᵢ(A))                    if i > 0
+}
+
+where swap₍ₖ,ₗ₎(A) = {
+    A                                   if k ≥ l
+    swap₍ₖ₊₁,ₗ₎(s₍ₖ,ₖ₊₁₎(A))              if aₖ > aₖ₊₁
+    swap₍ₖ₊₁,ₗ₎(A)                       otherwise
+}
+
+where s₍ᵢ,ⱼ₎(A) swaps elements aᵢ and aⱼ in sequence A
+```
+
+---
+
+class: middle
+
+## Implementation: _Working Code_
+
+- There are many **implementations** for a single **strategy**
+
+- Every implementation is a compromise: _readability, conventions, speed, ..._
+
+- Simplicity and clarity should be top priorities
+
+- Tools can help you write good code: _unit tests, formatters, linters, CI, ..._
+
+---
+
+class: middle
+
+## Implementation: _Code Review_
+
+- Standardize your team's _implementation_ standards
+
+- Avoid avoidable mistakes
+
+- Offload your attention to a checklist and automations
+
+- More work in the short term, less work in the long term
+
+---
+
+class: middle
+
+## Code Review: _demo_
+
+- **Open the [code review checklist](./code_review_checklist.md) and work from top to bottom**
+
+_Rely on code quality automations_
+
+**Print the docstring**: `$ python -m pydoc path/to/file.py`
+
+**Run the doctests**: `$ python -m doctest -v path/to/file.py`
+
+**Run the unit tests**: `$ python -m unittest path/to/tests/test_file.py`
+
+**Step through the tests in the debugger**:  
+
+- open the function and tests side-by-side
+- place a breakpoint in the first line of the function
+- open the VSCode debugger pane
+- start `ET: Debug Python (unittest)`
+
+**Lint the code**:
+
+- _with VSCode extensions_
+- `$ ruff check ./path/to/file.py`
+- `$ pylint ./path/to/file.py`
+
+---
+
+class: middle, center
+
+## Breakout Groups 1
+
+### _BSI + review the example_
+
+---
+
+class: middle, center
+
+## Breakout Groups 2
+
+### _./exercises_
+
+---
+
+class: middle, center
+
+## Study Suggestion: _Analyze -> Remix -> Write_
+
+- Choose any exercise platform, or try them all.
+
+- Forfeit!  Learn from others, not from a blank page
+
+- Easy is good!  Struggle in the _right_ way
+  - choose _behaviors_ you can easily understand
+
+- Study a mix of similar and different solutions
+  - compare different _strategies_ and _implementations_
+
+- Review: test -> step through -> document
+
+- Remix your own solutions based on others you studied
+
+- Finally, go find a similar challenge and write your own solutions!
+
+---
+
+class: middle, center
+
+## Discussion, Q & A
+
+---
+
+class: middle, center
+
+# Thank You
+
+<br />
+
+<img alt="Emerging Talent Logo" src="../.assets/emerging_talent_logo.png" height="50%"  width="50%">
+
+---
