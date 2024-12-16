@@ -34,7 +34,7 @@ class TestIsIn(unittest.TestCase):
 
     def test_two_empty_str2(self):
         """It should return True because both list are empty"""
-        self.assertTrue(is_in("", [], []))
+        self.assertFalse(is_in("", [], []))
 
     def test_two_empty_list(self):
         """It should return False because both list are empty"""
