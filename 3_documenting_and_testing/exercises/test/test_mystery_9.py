@@ -12,7 +12,7 @@ import unittest
 # class TestFunctions(unittest.TestCase):
 # --- import & test class before documenting and testing ---
 
-from .mystery_9 import mystery_9
+from ..mystery_9 import mystery_9
 
 
 class TestMystery9(unittest.TestCase):

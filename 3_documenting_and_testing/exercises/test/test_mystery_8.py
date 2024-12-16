@@ -13,7 +13,7 @@ import unittest
 # --- import & test class before documenting and testing ---
 
 
-from .mystery_8 import mystery_8
+from ..mystery_8 import mystery_8
 
 
 class TestMystery8(unittest.TestCase):
