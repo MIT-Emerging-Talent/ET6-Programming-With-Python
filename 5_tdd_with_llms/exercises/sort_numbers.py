@@ -3,8 +3,8 @@
 
 """Sort Numbers
 
-Write a function that takes in a list of numbers and returns the list sorted in ascending order.
-
+Write a function that takes in a list of numbers
+and returns the list sorted in ascending order.
 """
 
 
@@ -49,8 +49,6 @@ def sort_numbers(numbers):
                 smallest = num
 
         sorted_list.append(smallest)  # Add the smallest to the sorted list
-        numbers.remove(
-            smallest
-        )  # Remove the smallest from the original list, test won't run without this line
+        numbers.remove(smallest)  # Remove the smallest from the original list
 
     return sorted_list

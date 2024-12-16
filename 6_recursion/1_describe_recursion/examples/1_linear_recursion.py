@@ -28,7 +28,7 @@ def reverse_list(to_reverse: list) -> list:
 
 # --- --- --- test cases --- --- ---
 
-assert reverse_list([]) == [], "Test 1"
-assert reverse_list([1, 2, 3]) == [3, 2, 1], "Test 2"
-assert reverse_list([1, 2, 1]) == [1, 2, 1], "Test 3"
-assert reverse_list(["", False, None, 0]) == [0, None, False, ""], "Test 4"
+print(reverse_list([]), "should be", [])
+print(reverse_list([1, 2, 3]), "should be", [3, 2, 1])
+print(reverse_list([1, 2, 1]), "should be", [1, 2, 1])
+print(reverse_list(["", False, None, 0]), "should be", [0, None, False, ""])

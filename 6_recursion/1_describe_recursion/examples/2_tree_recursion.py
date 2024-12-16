@@ -37,12 +37,12 @@ def fibonacci(n: int) -> int:
 
 # --- --- --- test cases --- --- ---
 
-assert fibonacci(0) == 0, "0 -> 0"
-assert fibonacci(1) == 1, "1 -> 1"
-assert fibonacci(2) == 1, "2 -> 1"
-assert fibonacci(3) == 2, "3 -> 2"
-assert fibonacci(4) == 3, "4 -> 3"
-assert fibonacci(5) == 5, "5 -> 5"
-assert fibonacci(6) == 8, "6 -> 8"
-assert fibonacci(7) == 13, "7 -> 13"
-# assert fibonacci(33) == 3524578, '7 -> 3524578' # a slow line!
+print(fibonacci(0) , 'should be ', 0)
+print(fibonacci(1) , 'should be ', 1)
+print(fibonacci(2) , 'should be ', 1)
+print(fibonacci(3) , 'should be ', 2)
+print(fibonacci(4) , 'should be ', 3)
+print(fibonacci(5) , 'should be ', 5)
+print(fibonacci(6) , 'should be ', 8)
+print(fibonacci(7) , 'should be ', 13)
+# print(fibonacci(33) , 'should be ', 3524578)  # a slow line!

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Visualizing reverse_list
+""" Visualizing find_smallest_number
 
 To visualize implementation, 
 - use your VSCode debugger
@@ -27,23 +27,27 @@ from trace_recursion import trace_recursion
 
 
 @trace_recursion
-def reverse_list(to_reverse: list) -> list:
+def find_smallest_number(numbers: list) -> int:
     """
     
     """
-    if len(to_reverse) == 0:
-        return []
+    if len(numbers) == 0:
+        return None
+    
+    if len(numbers) == 1:
+        return numbers[0]
 
-    break_down = to_reverse[1:]
-    recursion = reverse_list(break_down)
-    build_up = recursion + [to_reverse[0]]
-
+    break_down = numbers[1:]
+    recursion = find_smallest_number(break_down)
+    build_up = numbers[0] if numbers[0] < recursion else recursion
+    
     return  build_up
 
 
 # --- call the traced function ---
 
-print(reverse_list([]), 'should be', [])
-print(reverse_list([1, 2, 3]), 'should be', [3, 2, 1])
-print(reverse_list([1, 2, 1]), 'should be', [1, 2, 1])
-print(reverse_list(["", False, None, 0]), 'should be', [0, None, False, ""])
+print(find_smallest_number([]), 'should be', None)
+print(find_smallest_number([1, 2, 3]), 'should be', 1)
+print(find_smallest_number([1, 2, 1]), 'should be', 1)
+print(find_smallest_number([0, -2, 1, 4, 8]), 'should be', -2)
+print(find_smallest_number([3, 2, 1, 0, -1, -2]), 'should be', -2)

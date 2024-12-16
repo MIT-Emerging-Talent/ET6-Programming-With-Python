@@ -17,9 +17,9 @@ def merge_sort(numbers: list) -> list:
         return numbers  #
 
     mid = len(numbers) // 2
-    #                                    |
+    # 
     left_half = merge_sort(numbers[:mid])
-    #                                      |
+    # 
     right_half = merge_sort(numbers[mid:])
 
     return merge(left_half, right_half)

@@ -28,4 +28,10 @@ def mystery_5(a, b=None):
         b = []
     for i in range(a):
         b.append(i)
+
+def mystery_5(a, b):
+    while a:
+        c = min(a)
+        a.remove(c)
+        b.append(c)33f8c9b08a1d8df52945164a5acdc94a6508e707
     return b

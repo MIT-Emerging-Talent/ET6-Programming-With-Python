@@ -67,6 +67,7 @@
   Python tutorial.
 - [LearnPython](https://www.learnpython.org/): An interactive online tutorial.
 - [coddy.tech](https://coddy.tech): An interactive online tutorial, mobile-friendly.
+- [Introduction to Scripting in Python Specialization](https://www.coursera.org/specializations/introduction-scripting-in-python): This specialization is intended for beginners who would like to master essential programming skills.  
 
 ## References
 

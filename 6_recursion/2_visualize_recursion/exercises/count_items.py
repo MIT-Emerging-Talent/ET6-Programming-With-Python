@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Visualizing reverse_list
+""" Visualizing count_items
 
 To visualize implementation, 
 - use your VSCode debugger
@@ -27,23 +27,24 @@ from trace_recursion import trace_recursion
 
 
 @trace_recursion
-def reverse_list(to_reverse: list) -> list:
+def count_items(to_count: list) -> int:
     """
     
     """
-    if len(to_reverse) == 0:
-        return []
+    if len(to_count) == 0:
+        return 0
 
-    break_down = to_reverse[1:]
-    recursion = reverse_list(break_down)
-    build_up = recursion + [to_reverse[0]]
+    break_down = to_count[1:]
+    recursion = count_items(break_down)
+    build_up = recursion + 1
 
     return  build_up
 
 
 # --- call the traced function ---
 
-print(reverse_list([]), 'should be', [])
-print(reverse_list([1, 2, 3]), 'should be', [3, 2, 1])
-print(reverse_list([1, 2, 1]), 'should be', [1, 2, 1])
-print(reverse_list(["", False, None, 0]), 'should be', [0, None, False, ""])
+print(count_items([]), 'should be', 0)
+print(count_items([1, 2, 3]), 'should be', 3)
+print(count_items([1, 2, 1]), 'should be', 3)
+print(count_items(["", False, None, 0]), 'should be', 4)
+print(count_items(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']), 'should be', 8)
