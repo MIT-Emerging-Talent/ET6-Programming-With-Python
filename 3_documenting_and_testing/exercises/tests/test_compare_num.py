@@ -7,7 +7,7 @@ Created on XX XX XX
 """
 import unittest
 
-from ..mystery_2 import compare_num
+from ..compare_num import compare_num
 
 
 class TestCompuer(unittest.TestCase):
