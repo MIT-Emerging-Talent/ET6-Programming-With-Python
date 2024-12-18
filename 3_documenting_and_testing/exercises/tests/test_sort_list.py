@@ -4,7 +4,7 @@ from ..sort_list import sort_list
 
 
 class TestMystery5(unittest.TestCase):
-    """ """
+    """Test the sort_list function"""
 
     def test_two_lists(self):
         """it should give [1, 9, 0, 1, 4, 5] sort the first list and append it to the other"""
