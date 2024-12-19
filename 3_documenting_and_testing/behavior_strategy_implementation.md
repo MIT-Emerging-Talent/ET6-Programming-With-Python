@@ -113,14 +113,14 @@ for index in range(2, 500):
 
     assert two_back + one_back == current, f"entry {index} is not correct"
 
-# %% does the function return the same or different arrays?
+# %% does the function return the same or different lists?
 
-array_1 = fibonacci_list(4)
-array_2 = fibonacci_list(6)
+list_1 = fibonacci_list(4)
+list_2 = fibonacci_list(6)
 
-# the function returned two different arrays with the same values
-assert array_1 == array_2, "the arrays store the same values"
-assert array_1 is not array_2, "the variables do not reference the same array"
+# the function returned two different lists with the same values
+assert list_1 == list_2, "the lists store the same values"
+assert list_1 is not list_2, "the variables do not reference the same list"
 ```
 
 </details>

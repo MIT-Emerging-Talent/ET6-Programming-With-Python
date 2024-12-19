@@ -68,6 +68,7 @@
 - [LearnPython](https://www.learnpython.org/): An interactive online tutorial.
 - [coddy.tech](https://coddy.tech): An interactive online tutorial, mobile-friendly.
 - [Introduction to Scripting in Python Specialization](https://www.coursera.org/specializations/introduction-scripting-in-python): This specialization is intended for beginners who would like to master essential programming skills.  
+- [Python Full Course 2024 (Bro Code)](https://www.youtube.com/watch?v=ix9cRaBkVe0) - _12 hours?!_
 
 ## References
 

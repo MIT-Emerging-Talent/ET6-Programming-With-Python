@@ -34,6 +34,7 @@ def fibonacci_memo(n: int, memo: dict = {}) -> int:
 print(fibonacci_memo(0), 'should be', 0)
 print(fibonacci_memo(1), 'should be', 1)
 print(fibonacci_memo(2), 'should be', 1)
+print(fibonacci_memo(3), 'should be', 2)
 print(fibonacci_memo(4), 'should be', 3)
 print(fibonacci_memo(6), 'should be', 8)
 print(fibonacci_memo(8), 'should be', 21)

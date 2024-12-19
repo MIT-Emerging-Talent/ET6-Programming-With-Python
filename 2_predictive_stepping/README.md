@@ -40,7 +40,7 @@ then communicating with everyone involved to deliver quality software within
 your project's constraints. This diagram shows the different channels of
 communication in a simple Python program:
 
-![a program](./.assets/what_is_programming.png)
+![a program](../.assets/what_is_programming.png)
 
 > PS. In the examples and exercises for this chapter you will be both the
 > developer and the user, running the program and interacting with it from

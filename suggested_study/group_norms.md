@@ -1,0 +1,12 @@
+
+# Group Norms
+
+- [What is Culture?](https://whatisculture.org/) - This site is designed to help you improve your understanding of culture and the impact it has on the way people think, behave, and interact.
+- [How can you establish group norms and expectations for a more inclusive team?](https://www.linkedin.com/advice/3/how-can-you-establish-group-norms-expectations#co-create-your-group-norms-and-expectations) - Group norms and expectations are the shared rules and standards that guide the behavior and interactions of a team. They can help create a more inclusive, collaborative, and productive team culture, especially when working with diverse and remote members. However, establishing group norms and expectations is not a one-time event. It requires ongoing communication, feedback, and adaptation. Here are some tips on how to do it effectively.
+- [On setting group norms](https://publichealth.berkeley.edu/wp-content/uploads/2020/01/On_Setting_Group_Norms.pdf) - Every group develops its own customs, habits and expectations for how things will be done. These patterns and expectations, or group norms as they’re sometimes called, influence the ways team members communicate with each other.
+- [Tips to create group norms for high-performance teams, with examples from 7 Asana managers](https://asana.com/resources/group-norms-examples) - Group norms are usually implied rather than defined, so you may have never thought of them before. By intentionally creating group norms, you can empower team collaboration, increase efficiency, and maximize effectiveness.
+Examples
+- [Injunctive Norms: Definition And 10 Examples](https://helpfulprofessor.com/injunctive-norms/)
+- [Seven Norms of Collaboration: A Supporting Toolkit](https://arbss.org/wp-content/uploads/2020/10/Toolkit-for-Establishing-Norms-for-Team-Members-1.pdf)
+- [Your 9-Step Guide for Smooth Remote Team Communication](https://relevant.software/blog/strategies-to-ensure-effective-communication-for-remote-teams/#2_Creating_an_Online_Office_Culture) - This isn’t just another guide to remote team communication; it’s your roadmap to making the world seem a little smaller and your remote development team a little tighter.
+- [The Differences between Dialogue and Debate](https://capstone.unst.pdx.edu/sites/default/files/Dialogue%20and%20Debate_0.pdf) - A short and wonderful PDF describing practical differences between debate & dialogue.  It also suggests behaviors that support dialogue, and related competencies.

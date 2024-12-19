@@ -12,7 +12,7 @@ To visualize strategy:
 - comment @trace_recursion and debug the function
 or copy the function into one of these sites:
 - https://www.recursionvisualizer.com
-- (https://recursion.vercel.app
+- https://recursion.vercel.app
 - https://recursion-visualizer.vercel.app
 - https://visualgo.net/en/recursion
 

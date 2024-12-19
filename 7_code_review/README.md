@@ -9,7 +9,7 @@ colleague's code and let them know what is good, what could be better, and
 suggest improvements if you can. The most important thing to keep in mind when
 writing a code review is:
 
-- _Talk about the code, not the person._
+- _Review the code, not the person._
 
 If there is something you would change in the code don't say "_you_ used a bad
 variable name", say something like "_this variable name_ could be more clear".

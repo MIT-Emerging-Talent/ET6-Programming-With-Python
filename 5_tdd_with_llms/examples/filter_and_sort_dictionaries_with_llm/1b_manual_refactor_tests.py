@@ -7,7 +7,7 @@ def f(lst, key):
     This function does not modify the argument list.
 
     Parameters:
-      list[dict[str, str]]: an array of dicts with string keys and string values
+      list[dict[str, str]]: an list of dicts with string keys and string values
       str: the function will remove all dicts that don't have this key
 
     Returns: a list of dicts where each dict contains the given key,

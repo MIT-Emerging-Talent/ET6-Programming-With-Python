@@ -59,7 +59,7 @@ class: center
 
 ## What is Programming?
 
-<img alt="What is programming?" src="./.assets/what_is_programming.png" height="100%"  width="100%">
+<img alt="What is programming?" src="../.assets/what_is_programming.png" height="100%"  width="100%">
 
 ---
 

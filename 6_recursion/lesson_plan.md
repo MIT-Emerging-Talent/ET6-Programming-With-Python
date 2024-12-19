@@ -156,11 +156,11 @@ class: middle, center
 ```py
 # a recursive strategy for counting the items in a list
 def count_items(list_of_things: list) -> int:
-    # base case:  an empty array
+    # base case:  an empty list
     if len(list_of_things) == 0:
       return 0 # turn-around:  an empty list has 0 items
 
-    # break-down:  create an array with 1 fewer items
+    # break-down:  create an list with 1 fewer items
     list_without_last_item = list_of_things[:-1]
     # recursion:  recursively count items in the smaller list
     previously_counted = count_items(list_without_last_item)
@@ -217,10 +217,10 @@ def count_items(list_of_things: list) -> int:
   recursive case:
     a non-empty list ->  ƒ(the list one item removed) + 1
   """
-    if len(list_of_things) == 0: # base case
-      return 0 # turn-around
-    #         recursion,  break-down, build-up
-    return count_items(list_of_things[:-1]) + 1
+  if len(list_of_things) == 0: # base case
+    return 0 # turn-around
+  #         recursion,  break-down, build-up
+  return count_items(list_of_things[:-1]) + 1
 
 # use the recursive solution to count items in this list
 count_items(['a', 'b', 'c', 'd'])
@@ -260,14 +260,15 @@ class: middle, center
 # breaking down & recursing
 count_items(['a', 'b', 'c', 'd'])
 count_items(['a', 'b', 'c']) + 1
-count_items(['a', 'b']) + 1 + 1
-count_items(['a']) + 1 + 1 + 1
+(count_items(['a', 'b']) + 1) + 1
+((count_items(['a']) + 1) + 1) + 1
 # base case
-count_items([]) + 1 + 1 + 1 + 1
-# turning around & building up
-0 + 1 + 1 + 1 + 1
-1 + 1 + 1 + 1
-2 + 1 + 1
+(((count_items([]) + 1) + 1) + 1) + 1
+# turning around
+(((0 + 1) + 1) + 1) + 1
+# building up
+((1 + 1) + 1) + 1
+(2 + 1) + 1
 3 + 1
 4
 ```
