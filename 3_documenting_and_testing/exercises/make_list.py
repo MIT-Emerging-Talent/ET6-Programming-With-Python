@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on 18/12/2024
+Created on 19/12/2024
 
 @author: Evan Cole
 @editor: Heba Shaheen
@@ -23,7 +23,7 @@ def make_list(length: int, start):
 
     Args:
         length (int): The list length that we want
-        start (_type_): a specific value to start the list with
+        start (Any number): a specific value to start the list with
 
     Returns(list) -> A list with spesific length and start value
     """
