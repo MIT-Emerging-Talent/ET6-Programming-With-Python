@@ -18,7 +18,7 @@ Created on 18/12/2024
 #        b = b + 1
 #    return c
 # --- after documenting and testing ---
-def mystery_6(length: int, start):
+def make_list(length: int, start):
     """Make a list with specific length and it start from a number and add +1 everytime
 
     Args:
