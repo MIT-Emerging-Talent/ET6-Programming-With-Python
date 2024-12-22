@@ -13,21 +13,30 @@ from trace_recursion import trace_recursion
 
 @trace_recursion
 def reverse_list(to_reverse: list) -> list:
-    base_case = _ # must use to_reverse
+    """
+    reverses the order of items in a list.
+
+    base case: if the len(to_reverse) == 0, return []
+
+    recursive case: if the len(to_reverse) > 0, return the reversed list
+
+    """
+    base_case = len(to_reverse) == 0  # must use to_reverse
     if base_case:
-        turn_around = _
+        turn_around = []  # return an empty list if the base case is met
         return turn_around
 
-    break_down = _ # must use to_reverse
+    break_down = to_reverse[1:]  # must use to_reverse
     recursion = reverse_list(break_down)
-    build_up = _ # must use recursion
-    
+    build_up = recursion + [to_reverse[0]]  # must use recursion
+
     return build_up
+
 
 # ----- ----- test cases ----- -----
 
 
-print(reverse_list([]), 'should be', [])
-print(reverse_list([1, 2]), 'should be', [2, 1])
-print(reverse_list([1, 2, 3]), 'should be', [3, 2, 1])
-print(reverse_list([3, 2, 1, 0, -1, -2, 3]), 'should be', [3, -2, -1, 0, 1, 2, 3])
+print(reverse_list([]), "should be", [])
+print(reverse_list([1, 2]), "should be", [2, 1])
+print(reverse_list([1, 2, 3]), "should be", [3, 2, 1])
+print(reverse_list([3, 2, 1, 0, -1, -2, 3]), "should be", [3, -2, -1, 0, 1, 2, 3])

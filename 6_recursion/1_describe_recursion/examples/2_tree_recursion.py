@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Tree Recursion
+"""Tree Recursion
 
 Tree recursion is a recursive function calls itself more than once in the body.
 
@@ -37,12 +37,12 @@ def fibonacci(n: int) -> int:
 
 # --- --- --- test cases --- --- ---
 
-print(fibonacci(0) , 'should be ', 0)
-print(fibonacci(1) , 'should be ', 1)
-print(fibonacci(2) , 'should be ', 1)
-print(fibonacci(3) , 'should be ', 2)
-print(fibonacci(4) , 'should be ', 3)
-print(fibonacci(5) , 'should be ', 5)
-print(fibonacci(6) , 'should be ', 8)
-print(fibonacci(7) , 'should be ', 13)
+print(fibonacci(0), "should be ", 0)
+print(fibonacci(1), "should be ", 1)
+print(fibonacci(2), "should be ", 1)
+print(fibonacci(3), "should be ", 2)
+print(fibonacci(4), "should be ", 3)
+print(fibonacci(5), "should be ", 5)
+print(fibonacci(6), "should be ", 8)
+print(fibonacci(7), "should be ", 13)
 # print(fibonacci(33) , 'should be ', 3524578)  # a slow line!

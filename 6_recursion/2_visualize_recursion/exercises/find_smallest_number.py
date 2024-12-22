@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Visualizing find_smallest_number
+"""Visualizing find_smallest_number
 
-To visualize implementation, 
+To visualize implementation,
 - use your VSCode debugger
 - copy-paste the code into PythonTutor
 
@@ -29,25 +29,32 @@ from trace_recursion import trace_recursion
 @trace_recursion
 def find_smallest_number(numbers: list) -> int:
     """
-    
-    """
-    if len(numbers) == 0:
-        return None
-    
-    if len(numbers) == 1:
-        return numbers[0]
+    Finds the smallest number in a list of numbers.
 
-    break_down = numbers[1:]
-    recursion = find_smallest_number(break_down)
-    build_up = numbers[0] if numbers[0] < recursion else recursion
-    
-    return  build_up
+    base case 1: if the len(numbers) == 0, return None
+
+    base case 2: if the len(numbers) == 1, return numbers[0]
+
+    recursive case: if the len(numbers) > 1, return the smallest number in the list
+
+    """
+    if len(numbers) == 0:  # base case - empty list    ->  None
+        return None  # return case
+
+    if len(numbers) == 1:  # list with one item    ->  numbers[0]
+        return numbers[0]  # return case
+
+    break_down = numbers[1:]  # must use argument(s)
+    recursion = find_smallest_number(break_down)  # must use recursion
+    build_up = numbers[0] if numbers[0] < recursion else recursion  # must use recursion
+
+    return build_up
 
 
 # --- call the traced function ---
 
-print(find_smallest_number([]), 'should be', None)
-print(find_smallest_number([1, 2, 3]), 'should be', 1)
-print(find_smallest_number([1, 2, 1]), 'should be', 1)
-print(find_smallest_number([0, -2, 1, 4, 8]), 'should be', -2)
-print(find_smallest_number([3, 2, 1, 0, -1, -2]), 'should be', -2)
+print(find_smallest_number([]), "should be", None)
+print(find_smallest_number([1, 2, 3]), "should be", 1)
+print(find_smallest_number([1, 2, 1]), "should be", 1)
+print(find_smallest_number([0, -2, 1, 4, 8]), "should be", -2)
+print(find_smallest_number([3, 2, 1, 0, -1, -2]), "should be", -2)

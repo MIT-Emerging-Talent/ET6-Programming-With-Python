@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Fix the bug(s)! """
+"""Fix the bug(s)!"""
 
 import sys
 import os
@@ -14,13 +14,22 @@ from trace_recursion import trace_recursion
 @trace_recursion
 def reverse_list(to_reverse: list) -> list:
     """
-    
-    """
-    if len(to_reverse) == 0:
-        return []
+    reverses a list.
 
-    length = len(to_reverse)
-    return reverse_list(to_reverse[:length-1]) + [to_reverse[length-1]]
+    base case:  empty list (if the len(to_reverse) == 0)    ->  [] (return [])
+
+    recursive case:
+        non-empty list (if the len(to_reverse) > 0)    ->
+            reverse_list(list without last item) + [last item]
+
+    """
+    if len(to_reverse) == 0:  # empty list    ->  []
+        return []  # return case
+
+    length = len(to_reverse)  # must use argument(s)
+    return reverse_list(to_reverse[: length - 1]) + [
+        to_reverse[length - 1]
+    ]  # must use recursion
 
 
 # --- call the traced function ---

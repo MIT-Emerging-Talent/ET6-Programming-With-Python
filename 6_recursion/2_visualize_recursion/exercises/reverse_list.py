@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Visualizing reverse_list
+"""Visualizing reverse_list
 
-To visualize implementation, 
+To visualize implementation,
 - use your VSCode debugger
 - copy-paste the code into PythonTutor
 
@@ -29,21 +29,28 @@ from trace_recursion import trace_recursion
 @trace_recursion
 def reverse_list(to_reverse: list) -> list:
     """
-    
+    Reverses the order of a list.
+
+    base case:
+        empty list (if the len(to_reverse) == 0)    ->  [] (return [])
+
+    recursive case: # if the len(to_reverse) > 0, return reverse_list(to_reverse[1:]) + [to_reverse[0]]
+        non-empty list ->  ƒ(list without first item) + [first item]
+
     """
-    if len(to_reverse) == 0:
-        return []
+    if len(to_reverse) == 0:  # base case - empty list    ->  []
+        return []  # return case
 
-    break_down = to_reverse[1:]
-    recursion = reverse_list(break_down)
-    build_up = recursion + [to_reverse[0]]
+    break_down = to_reverse[1:]  # must use argument(s)
+    recursion = reverse_list(break_down)  # must use recursion
+    build_up = recursion + [to_reverse[0]]  # must use recursion
 
-    return  build_up
+    return build_up
 
 
 # --- call the traced function ---
 
-print(reverse_list([]), 'should be', [])
-print(reverse_list([1, 2, 3]), 'should be', [3, 2, 1])
-print(reverse_list([1, 2, 1]), 'should be', [1, 2, 1])
-print(reverse_list(["", False, None, 0]), 'should be', [0, None, False, ""])
+print(reverse_list([]), "should be", [])
+print(reverse_list([1, 2, 3]), "should be", [3, 2, 1])
+print(reverse_list([1, 2, 1]), "should be", [1, 2, 1])
+print(reverse_list(["", False, None, 0]), "should be", [0, None, False, ""])
