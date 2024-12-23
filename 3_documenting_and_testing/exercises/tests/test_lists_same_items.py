@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Updated on 23 12 2024
+
+@author: Evan Cole
+@editor: Heba
+"""
 import unittest
 
 from ..lists_same_items import lists_same_items
