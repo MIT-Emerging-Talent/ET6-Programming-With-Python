@@ -21,9 +21,10 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+from trace_calls import trace_calls
 
 
-# @trace_calls
+@trace_calls
 def fibonacci_memo(n: int, memo: dict = {}) -> int:
     if n == 0:
         return 0
@@ -40,9 +41,9 @@ def fibonacci_memo(n: int, memo: dict = {}) -> int:
 
 # --- call the traced function ---
 
-fibonacci_memo(0)
+# fibonacci_memo(0)
 fibonacci_memo(1)
-fibonacci_memo(8)
-fibonacci_memo(4)
+# fibonacci_memo(8)
+# fibonacci_memo(4)
 fibonacci_memo(6)
-fibonacci_memo(10)
+# fibonacci_memo(10)
