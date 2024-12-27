@@ -11,6 +11,7 @@ Created on 2024-12-06
 Author: Claude AI
 """
 
+
 def count_words(text: str) -> int:
     """Counts the number of words in a string.
     Words are separated by spaces.
@@ -29,4 +30,6 @@ def count_words(text: str) -> int:
     """
     assert isinstance(text, str), "input must be a string"
 
-    return len(text.split(" "))
+    # return len(text.split(" ")) -> this should be .split() not .split(" ")
+    thestring = text.split()
+    return len(thestring)
