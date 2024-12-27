@@ -11,21 +11,22 @@ Created on 2024-12-06
 Author: Claude AI
 """
 
+
 def remove_spaces(text: str) -> str:
     """Removes all spaces from a string.
-    
+
     This function takes any string input and returns a new string with all
     space characters removed. It preserves all other characters including
     numbers, punctuation, and special characters.
-    
+
     Parameters:
         text: str, the input string to process
-        
+
     Returns -> str: the input string with all spaces removed
-    
+
     Raises:
         AssertionError: if input is not a string
-    
+
     Examples:
         >>> remove_spaces("hello world")
         'helloworld'
