@@ -41,14 +41,7 @@ def count_between(numbers: list, lower: int, upper: int) -> int:
     assert isinstance(upper, int), "upper bound must be an integer"
 
     count = 0
-    if lower == upper:
-        return count
-    if lower < upper:
-        for num in numbers:
-            if lower <= num <= upper:
-                count += 1
-    if lower > upper:
-        for num in numbers:
-            if lower >= num >= upper:
-                count += 1
+    for num in numbers:
+        if lower <= num <= upper or upper <= num <= lower:
+            count += 1
     return count

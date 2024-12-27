@@ -34,6 +34,10 @@ class TestCountBetween(unittest.TestCase):
         """It should count all numbers when all in range"""
         self.assertEqual(count_between([2, 3, 4], 1, 3), 2)
 
+    def test_negative_numbers(self):
+        """It should count negative numbers in the range"""
+        self.assertEqual(count_between([-3, -2, -1, 0, 1, 2, 3], -2, 2), 5)
+
     # Edge cases
     def test_empty_list(self):
         """It should return 0 for empty list"""
@@ -41,7 +45,7 @@ class TestCountBetween(unittest.TestCase):
 
     def test_equal_bounds(self):
         """It should work when lower and upper bounds are equal"""
-        self.assertEqual(count_between([1, 2, 3, 2, 1], 2, 2), 0)
+        self.assertEqual(count_between([1, 2, 3, 2, 1], 2, 2), 2)
 
     def test_float_numbers(self):
         """It should work with float numbers in list"""
@@ -56,6 +60,11 @@ class TestCountBetween(unittest.TestCase):
     def test_reversed_bounds(self):
         """It should work with reversed bounds"""
         self.assertEqual(count_between([1, 2, 3, 4, 5], 4, 2), 3)
+
+    def test_invalid_list_type(self):
+        """It should raise AssertionError if numbers is not a list"""
+        with self.assertRaises(AssertionError):
+            count_between("not a list", 1, 3)
 
 
 if __name__ == "__main__":
