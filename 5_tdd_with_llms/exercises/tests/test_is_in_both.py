@@ -13,21 +13,21 @@ class TestIsInBoth(unittest.TestCase):
 
     # Standard test cases
     def test_string_in_two_list(self):
-        """It should give the string that appers in the two lists"""
+        """It should give true if the string is in the two list"""
         thestring = "Heba"
         list1 = ["Noor", "Omer", "Heba"]
         list2 = ["Ahmed", "Heba", "Sondos", "Haya"]
         self.assertEqual(is_in_both(thestring, list1, list2), True)
 
     def test_string_in_one_list(self):
-        """It should give the string that appers in the two lists"""
+        """It should give False if the string is not in the two list"""
         thestring = "Hala"
         list1 = ["Noor", "Hala", "Heba"]
         list2 = ["Ahmed", "Heba", "Sondos", "Haya"]
         self.assertEqual(is_in_both(thestring, list1, list2), False)
 
     def test_string_not_in(self):
-        """It should give the string that appers in the two lists"""
+        """It should give False if the string is not in the two list"""
         thestring = "Mayar"
         list1 = ["Noor", "Omer", "Heba"]
         list2 = ["Ahmed", "Heba", "Sondos", "Haya"]
