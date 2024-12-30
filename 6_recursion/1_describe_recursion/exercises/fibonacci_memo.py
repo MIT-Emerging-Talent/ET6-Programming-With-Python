@@ -17,16 +17,22 @@ def fibonacci(n: int, memo: dict = {}) -> int:
     recursive case:
 
     """
-    if n == 0:
-        return 0
+    if n == 0: #
+        return 0 #
 
-    if n == 1:
-        return 1
+    if n == 1: #
+        return 1 #
 
-    if n in memo:
-        return memo[n]
-
-    memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+    if n in memo: #
+        return memo[n] #
+    
+    # 
+    left_recursion = fibonacci(n - 1, memo)
+    # 
+    right_recursion = fibonacci(n - 2, memo)
+    # 
+    memo[n] = left_recursion + right_recursion
+    
     return memo[n]
 
 

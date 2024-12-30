@@ -19,28 +19,36 @@ import unittest
 from ..fibonacci_list import fibonacci_list
 
 
-class TestFibLib(unittest.TestCase):
-    """Test the fibonacci_lib function"""
+class TestFibonacciList(unittest.TestCase):
+    """Test the fibonacci_list function"""
 
     def test_0(self):
         """It should evaluate 0 to []"""
-        self.assertEqual(fibonacci_list(0), [])
+        actual = fibonacci_list(0) # call function with test arguments
+        expected = [] # hand-write the expected return value
+        self.assertEqual(actual, expected)
 
     def test_1(self):
         """It should evaluate 1 to [0]"""
-        self.assertEqual(fibonacci_list(1), [0])
+        actual = fibonacci_list(1)
+        expected = [0]
+        self.assertEqual(actual, expected)
 
     def test_2(self):
         """It should evaluate 2 to [0, 1]"""
-        self.assertEqual(fibonacci_list(2), [0, 1])
+        actual = fibonacci_list(2)
+        self.assertEqual(actual, [0, 1])
 
     def test_3(self):
         """It should evaluate 3 to [0, 1, 1]"""
-        self.assertEqual(fibonacci_list(3), [0, 1, 1])
+        expected = [0, 1, 1]
+        self.assertEqual(fibonacci_list(3), expected)
 
     def test_4(self):
         """It should evaluate 4 to [0, 1, 1, 2]"""
-        self.assertEqual(fibonacci_list(4), [0, 1, 1, 2])
+        actual = fibonacci_list(4)
+        expected = [0, 1, 1, 2]
+        self.assertEqual(actual, expected)
 
     def test_5(self):
         """It should evaluate 5 to [0, 1, 1, 2, 3]"""

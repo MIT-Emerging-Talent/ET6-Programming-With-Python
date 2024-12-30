@@ -42,7 +42,7 @@ Returns -> list[int] with the first n numbers of the fibonacci sequence
 ```python
 import unittest
 
-from fib_list import fib_list
+from ..fib_list import fib_list
 
 
 class TestFibLib(unittest.TestCase):
@@ -76,9 +76,6 @@ class TestFibLib(unittest.TestCase):
         """It should evaluate 9 to [0, 1, 1, 2, 3, 5, 8, 13, 21]"""
         self.assertEqual(fib_list(9), [0, 1, 1, 2, 3, 5, 8, 13, 21])
 
-
-if __name__ == "__main__":
-    unittest.main()
 ```
 
 </details>
@@ -116,14 +113,14 @@ for index in range(2, 500):
 
     assert two_back + one_back == current, f"entry {index} is not correct"
 
-# %% does the function return the same or different arrays?
+# %% does the function return the same or different lists?
 
-array_1 = fibonacci_list(4)
-array_2 = fibonacci_list(6)
+list_1 = fibonacci_list(4)
+list_2 = fibonacci_list(6)
 
-# the function returned two different arrays with the same values
-assert array_1 == array_2, "the arrays store the same values"
-assert array_1 is not array_2, "the variables do not reference the same array"
+# the function returned two different lists with the same values
+assert list_1 == list_2, "the lists store the same values"
+assert list_1 is not list_2, "the variables do not reference the same list"
 ```
 
 </details>
@@ -280,7 +277,6 @@ some discussion questions:
 - Which implementation do you think is better, and why?
 - When is `else` used, and when is it not used? Which way do you prefer?
 - How would you change the code to it more understandable?
-- Think of a couple white box unit tests for each implementation.
 
 <details>
 <summary><strong>Recursively calculate the previous list, then calculate the new last value.</strong></summary>
@@ -341,15 +337,14 @@ def fibonnaci_list(n: int, memo: dict = {}) -> list[int]:
     # return a hard-coded value if n is too small
     if n is 0:
         pass
-    if n is 1:
+    elif n is 1:
         list = [0]
-    if n is 2:
+    elif n is 2:
         list = [0,1]
-
-    # make the right answer
     else:
-      list = fibonnaci_list(n - 1)
-      list.append(list[-1] + list[-2])
+        # make the right answer
+        list = fibonnaci_list(n - 1)
+        list.append(list[-1] + list[-2])
 
     # save the answer for later and return it
     memo[n] = list

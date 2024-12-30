@@ -22,8 +22,12 @@ You can also summarize a recursive strategy in a few lines like so:
 
 ```py
 """
-base case         ->  turn-around
-recursive case  ->  ƒ(break-down)  +  rest of solution
+behavior description
+
+base case :
+    argument description  ->  turn-around description
+recursive case:
+    argument description  ->  ƒ(break-down description) build-up description 
 """
 ```
 
@@ -40,8 +44,12 @@ connect your programming knowledge to computer science principles.
 ```py
 def _func_name_(__: __) -> __:
     """
-    base case         ->  return value
-    recursive case  ->  ƒ(break-down) + rest of solution
+    behavior description
+
+    base case :
+        argument description  ->  turn-around description
+    recursive case:
+        argument description  ->  ƒ(break-down description) build-up description
     """
     is_base_case = __ # must use argument(s)
     if is_base_case:
@@ -65,8 +73,12 @@ solution, the more it resembles the semi-formal description.
 
 def reverse_string(to_reverse: str) -> str:
   """
-  empty string    ->  empty string
-  non-empty str ->  ƒ(string without first char) + first char
+  Reverses the characters in a string.
+
+  base case :
+      empty string    ->  empty string
+  recursive case:
+      non-empty str ->  ƒ(string without first char) + first char
   """
   is_base_case = len(to_reverse) == 0 # must use argument(s)
   if is_base_case:
@@ -84,8 +96,12 @@ def reverse_string(to_reverse: str) -> str:
 
 def reverse_string(to_reverse: str) -> str:
   """
-  empty string    ->  empty string
-  non-empty str ->  ƒ(string without first char) + first char
+  Reverses the characters in a string.
+
+  base case :
+      empty string    ->  empty string
+  recursive case:
+      non-empty str ->  ƒ(string without first char) + first char
   """
   if len(to_reverse) == 0: # base case
       return '' # turn-around
@@ -101,8 +117,12 @@ def reverse_string(to_reverse: str) -> str:
 
 def reverse_string(to_reverse: str) -> str:
   """
-  empty string    ->  empty string
-  non-empty str ->  ƒ(string without first char) + first char
+  Reverses the characters in a string.
+
+  base case :
+      empty string    ->  empty string
+  recursive case:
+      non-empty str ->  ƒ(string without first char) + first char
   """
   if len(to_reverse) == 0: # base case
       return '' # turn-around
@@ -116,8 +136,12 @@ def reverse_string(to_reverse: str) -> str:
 
 def reverse_string(to_reverse: str) -> str:
   """
-  empty string    ->  empty string
-  non-empty str ->  ƒ(string without first char) + first char
+  Reverses the characters in a string.
+
+  base case :
+      empty string    ->  empty string
+  recursive case:
+      non-empty str ->  ƒ(string without first char) + first char
   """
   if len(to_reverse) == 0:
       return ''

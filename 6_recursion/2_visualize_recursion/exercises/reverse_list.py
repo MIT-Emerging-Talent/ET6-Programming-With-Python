@@ -8,8 +8,9 @@ To visualize implementation,
 - copy-paste the code into PythonTutor
 
 To visualize strategy:
-- uncomment @trace_calls and run the script
-or copy the code into one of these sites:
+- run the script and read the recursion trace
+- comment @trace_recursion and debug the function
+or copy the function into one of these sites:
 - https://www.recursionvisualizer.com
 - (https://recursion.vercel.app
 - https://recursion-visualizer.vercel.app
@@ -22,18 +23,27 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
+from trace_recursion import trace_recursion
 
-# @trace_calls
+
+@trace_recursion
 def reverse_list(to_reverse: list) -> list:
+    """
+    
+    """
     if len(to_reverse) == 0:
         return []
 
-    return reverse_list(to_reverse[1:]) + [to_reverse[0]]
+    break_down = to_reverse[1:]
+    recursion = reverse_list(break_down)
+    build_up = recursion + [to_reverse[0]]
+
+    return  build_up
 
 
 # --- call the traced function ---
 
-reverse_list([])
-reverse_list([1, 2, 3])
-reverse_list([1, 2, 1])
-reverse_list(["", False, None, 0])
+print(reverse_list([]), 'should be', [])
+print(reverse_list([1, 2, 3]), 'should be', [3, 2, 1])
+print(reverse_list([1, 2, 1]), 'should be', [1, 2, 1])
+print(reverse_list(["", False, None, 0]), 'should be', [0, None, False, ""])

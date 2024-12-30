@@ -9,13 +9,15 @@ interests, and anything else you'd like to share.
 
 - [ ] You created your Profile README repository using
       [the template `username` repository](https://github.com/MIT-Emerging-Talent/username)
-- [ ] All of the CI checks pass under the Actions tab
+- [ ] Your repository’s name matches your GitHub username.
+- [ ] All of the CI checks pass under the Actions tab. _Or_ you commented the lines that failed CI checks explaining why you broke the rule to get the README you wanted. (eg. “I used HTML to align the image in the center”)
 
 ## Suggested Study
 
 > Here are some ideas to help with this workshop's deliverable.  Don't see what you need here?  Look through the rest of [Suggested Study](../suggested_study/) or search what you need online.
 
-Writing Markdown in VSCode: [Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo), [James Q Quick](https://www.youtube.com/watch?v=pTCROLZLhDM).
+- Writing Markdown in VSCode: [Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo), [James Q Quick](https://www.youtube.com/watch?v=pTCROLZLhDM).
+- [A reference of all the MarkdownLint errors and how to fix them.](https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md)
 
 Get inspired for your Profile README
 

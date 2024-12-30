@@ -12,7 +12,7 @@ class: middle, center
 
 class: middle, center
 
-## Pre-Knowledge: _Word Cloud_
+## Pre-Knowledge: _Open Answers_
 
 ---
 
@@ -20,7 +20,9 @@ class: middle
 
 ## Agenda
 
-- **Word Cloud Discussion**
+- **Slack and Zoom Etiquette**
+
+- **Pre-Knowledge Discussion**
 
 - **Learning Objectives**
 
@@ -41,6 +43,12 @@ Break!
 - **Deliverables**
 
 - **Q & A**
+
+---
+
+class: middle, center
+
+## Slack and Zoom Etiquette
 
 ---
 

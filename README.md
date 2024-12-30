@@ -12,4 +12,5 @@ at Emerging Talent.
   - _Count how many times each line is executed_:
     `$ python -m trace -c path/to/file.py`
 - **Run a file with Unit Tests**:
-  `$ python -m unittest -c path/to/tests/test_file.py`
+  - _as a script_:`$ python -m unittest path/to/tests/test_file.py`
+  - _as a module_:`$ python -m unittest path.to.tests.test_file`

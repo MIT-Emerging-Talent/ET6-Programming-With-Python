@@ -9,6 +9,25 @@ the details become a habit.
 - [ ] The file names match the function
 - [ ] Test file is named `/tests/test_file_name.py`
 
+## Files
+
+- [ ] The file names match the function
+- [ ] Module header in each file
+- [ ] Module docstring in each file
+
+## Unit Tests
+
+- [ ] The test class has a helpful name in PascalCase
+- [ ] The test class has a docstring
+- Each unit test has
+  - [ ] A helpful name
+  - [ ] A clear docstring
+  - [ ] Only one assertion
+  - [ ] There is no logic in the unit test
+- [ ] All tests pass
+- [ ] (challenge) Tests for defensive assertions
+- [ ] (challenge) Tests for many boundary cases
+
 ## Function Docstring
 
 - [ ] behavior description
@@ -16,6 +35,7 @@ the details become a habit.
 - [ ] return value description
 - [ ] include any assumptions
 - [ ] include 3 or more (passing!) doctests
+- [ ] assertions are documented (if there are any)
 - [ ] include 1-2 use cases (if necessary)
 
 ## Function Implementation
@@ -30,22 +50,3 @@ the details become a habit.
 - [ ] Comments explain the strategy (if necessary)
 - [ ] There are type annotations
 - [ ] (challenge) The code includes defensive assertions
-
-## Unit Test Suite
-
-- [ ] The test class has a helpful name in PascalCase
-- [ ] The test class has a docstring
-- Each unit test has
-  - [ ] A helpful name
-  - [ ] A clear docstring
-  - [ ] Only one assertion
-- [ ] All tests pass
-- [ ] (challenge) Tests for defensive assertions
-- [ ] (challenge) Tests for many boundary cases
-- [ ] (challenge) Includes black-box and glass-box tests
-
-## Files
-
-- [ ] The file names match the function
-- [ ] Module header in each file
-- [ ] Module docstring in each file

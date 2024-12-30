@@ -6,9 +6,11 @@
   basics on what you need to know and what you need to install.
 - [r/learnpthon wiki](https://www.reddit.com/r/learnpython/wiki/index/) - a
   collection of resources for learning all things Python.
+- [Python Tutor](https://pythontutor.com/visualize.html#mode=edit): a tool for visualizing program memory
 
 ## Trace Tables
 
+- [An online trace table](https://www.101computing.net/trace-table/)
 - [Python Exercise 1 Trace Tables (John Philip Jones)](https://www.youtube.com/watch?v=pVeSya6nYuQ):
   A clear and complete explanation of how and why to use trace tables.
 - [Trace tables tutorial GCSE Computer Science (Computer Science Tutorials)](https://www.youtube.com/watch?v=UbANyxE7pGE):
@@ -21,8 +23,26 @@
   [conditional example](https://www.bouraspage.com/repository/algorithmic-thinking/exercise-trace-tables-and-single-alternative-decision-structures):
   Completed code + trace tables to study.
 
+## Program Visualization Tools
+
+- [Python Tutor](https://pythontutor.com/visualize.html#mode=edit): A website with _statement-level_ stepping for short Python programs and clear memory visualizations.
+- [Thonny IDE](https://thonny.org): A downloadable programming  environment with _expression-level_ stepping, memory visualization and debugging tools.
+- [Futurecoder IDE](https://futurecoder.io/course/#ide): A website with 3 ways to visualize your program execution: _[Snoop](https://pypi.org/project/snoop/), [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) and [Birdseye](https://pypi.org/project/birdseye/)_
+- [The `trace` Module](https://docs.python.org/3/library/trace.html): A built-in python module for creating traces of your program's execution.
+  - `$ python -m trace -t path/to/file.py`
+  - `$ python -m trace -c path/to/file.py`
+- [The VSCode Debugger](https://code.visualstudio.com/docs/python/debugging)
+
+## Errors
+
+- [Syntax vs. Semantics in Programming Languages (Udacity)](https://www.youtube.com/watch?v=vP-mn62EF0o)
+- [Syntax, Runtime and Logical Errors in Python (Learn Learn Scratch Tutorials)](https://www.youtube.com/watch?v=ToPP5UGgJUM)
+- [Syntax, Runtime and Semantic Errors (Omar Shaaban)](https://www.youtube.com/watch?v=bN0oGYD3z60) - _"Semantic errors" in this video are what we call Bugs_
+- [Python Error Types (Homawccc)](https://www.youtube.com/watch?v=Kf6dvup_6Mo)
+
 ## Tutorials and Courses
 
+- [Computational Core: Introduction to Python (KSU)](https://textbooks.cs.ksu.edu/intro-python/): A great course with live exercises, program visualization (_Python Tutor_) and worked examples.
 - [Python for Everybody](https://www.py4e.com): This web site is building a set
   of free materials, lectures, book and assignments to help students learn how
   to program in Python.
@@ -47,6 +67,8 @@
   Python tutorial.
 - [LearnPython](https://www.learnpython.org/): An interactive online tutorial.
 - [coddy.tech](https://coddy.tech): An interactive online tutorial, mobile-friendly.
+- [Introduction to Scripting in Python Specialization](https://www.coursera.org/specializations/introduction-scripting-in-python): This specialization is intended for beginners who would like to master essential programming skills.  
+- [Python Full Course 2024 (Bro Code)](https://www.youtube.com/watch?v=ix9cRaBkVe0) - _12 hours?!_
 
 ## References
 
