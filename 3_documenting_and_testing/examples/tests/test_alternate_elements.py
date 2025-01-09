@@ -14,6 +14,7 @@ Author: Claude AI
 """
 
 import unittest
+
 from ..alternate_elements import alternate_elements
 
 class TestAlternateElements(unittest.TestCase):

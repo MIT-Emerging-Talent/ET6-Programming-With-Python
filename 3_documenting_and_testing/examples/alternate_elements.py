@@ -33,5 +33,5 @@ def alternate_elements(items: list) -> list:
         []
     """
     assert isinstance(items, list), "input must be a list"
-    
+
     return items[::2]

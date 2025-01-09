@@ -49,6 +49,7 @@ easier it will be to focus on the fun stuff.
 - [Git Katas](https://github.com/eficode-academy/git-katas)
 - [git-it](https://github.com/jlord/git-it-electron/)
 - [Understand how to use Atomic Commits](https://curiousprogrammer.io/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git)
+- [Understand how to use Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [rebasic](https://github.com/lpmi-13/rebasic)
 - [Pro Git](https://open.umn.edu/opentextbooks/textbooks/1360): great open textbook
 
