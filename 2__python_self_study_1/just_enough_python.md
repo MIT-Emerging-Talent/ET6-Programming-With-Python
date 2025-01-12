@@ -317,6 +317,57 @@ appreciation = 'thank you for this text: ' + string_from_user
 # prints a message, but does not accept new input from the user
 print(appreciation)
 ```
+# Explanation of str(input()), int(input()), and float(input())
+
+This document explains how to use `str(input())`, `int(input())`, and `float(input())` in Python with simple examples.
+
+## **1. `str(input())`**
+- **Explanation:**  
+  - `input()` collects data from the user as a string by default.  
+  - Wrapping it in `str()` ensures the input is treated as a string explicitly.  
+  - Useful when working with text.  
+
+**Example:**  
+```python
+name = str(input("Enter your name: "))  # User enters: Obay
+print("Hello, " + name)                # Output: Hello, Obay
+```
+
+## **2. `int(input())`**
+- **Explanation:**  
+  - `input()` collects data as a string, but `int()` converts it into an integer.  
+  - Use this for numbers that don’t have decimals (whole numbers).  
+  - If the user enters a non-numeric value (like "abc"), it will throw an error.  
+
+**Example:**  
+```python
+age = int(input("Enter your age: "))  # User enters: 25
+print("You are " + str(age) + " years old.")  # Output: You are 25 years old.
+```
+
+## **3. `float(input())`**
+- **Explanation:**  
+  - `input()` collects data as a string, but `float()` converts it into a decimal (floating-point number).  
+  - Use this for numbers that might include decimals.  
+
+**Example:**  
+```python
+price = float(input("Enter the price: "))  # User enters: 12.99
+print("The price is $" + str(price))       # Output: The price is $12.99
+```
+
+## **Key Notes**
+1. Always use the correct type (`int` for whole numbers, `float` for decimals, and `str` for text).  
+2. If the input can't be converted (e.g., entering text when `int()` is expected), Python will show an error.  
+3. You can also use `type()` to verify the data type of user input.  
+
+**Example:**  
+```python
+value = int(input("Enter a number: "))
+print("Type:", type(value))  # Output: <class 'int'>
+```
+
+[TOP](#just-enough-python-cheat-sheet)
 
 [TOP](#just-enough-python-cheat-sheet)
 
