@@ -1,0 +1,6 @@
+Write a Python function to calculate the area of a circle 
+This function should take the radius as input and return the area
+
+Example Runs
+print(circle_area(3)) # Output: 28.274333882308138
+print(circle_area(5)) # Output: 78.53981633974483
