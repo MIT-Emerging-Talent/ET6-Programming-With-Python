@@ -24,8 +24,8 @@ class TestFibonacciList(unittest.TestCase):
 
     def test_0(self):
         """It should evaluate 0 to []"""
-        actual = fibonacci_list(0) # call function with test arguments
-        expected = [] # hand-write the expected return value
+        actual = fibonacci_list(0)  # call function with test arguments
+        expected = []  # hand-write the expected return value
         self.assertEqual(actual, expected)
 
     def test_1(self):
