@@ -30,7 +30,7 @@ def trace_recursion(func):
 
             depth = -1
             log = False
-            
+
             return type(error).__name__
         else:
             print(f"{indent * depth}{result}")
