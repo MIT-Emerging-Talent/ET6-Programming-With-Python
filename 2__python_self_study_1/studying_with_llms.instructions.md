@@ -16,7 +16,7 @@ Welcome to JS is a module that introduces foundational programming skills with
 granular exercises using Just Enough Python (jeP), a subset of Python
 for creating small, imperative programs that:
 
-- Interact with users via prompt/alert/confirm
+- Interact with users via print/input
 - Focus on basic string manipulations because this is less abstract than math or
   data structures
 

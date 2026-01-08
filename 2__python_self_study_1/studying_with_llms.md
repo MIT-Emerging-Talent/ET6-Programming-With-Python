@@ -1,7 +1,7 @@
 # Studying with LLMs
 
 LLMs exists and can code, we know this. And you will use it, we know this too.
-So here's our advice on how to use generative AI when studying Welcome to JS:
+So here's our advice on how to use generative AI when studying Programming with Python:
 
 Generative AI can write and explain code for you, but writing and explaining
 code are not the most important skills a developer needs. More importantly, a
@@ -16,7 +16,7 @@ developer needs to _understand_ a program, its purpose and its context:
 how to ask these questions very clearly otherwise AI will become a crutch, not a
 tool.
 
-Welcome to JS covers the hidden skills behind understanding, discussing,
+Programming with Python covers the hidden skills behind understanding, discussing,
 planning and writing programs. Every learning objective in this module is a
 skill you should master without the help of AI - you can use AI for help
 learning each skill, but you have only mastered a skill when you can complete
@@ -60,9 +60,9 @@ to your chat with an LLM, this will work better with some LLMs than with others.
 If you're not able to upload the files, you can copy-paste the first one as your
 first message:
 
-- **[welcome-to-js.llm-instructions.md](./welcome-to-js.llm-instructions.md)**:
-  This document helps the LLM understand Welcome to JS.
-- **[welcome-to-js.llm-examples.md](./welcome-to-js.llm-examples.md)**: This
+- **[studying_with_llms.instructions.md](./studying_with_llms.instructions.md)**:
+  This document helps the LLM understand Programming with Python.
+- **[studying_with_llms.examples.md](./studying_with_llms.examples.md)**: This
   document has example programs the LLM can use for additional inspiration.
 
 > PS. These documents are a work-in-progress. Send us a PR when you find room
@@ -70,8 +70,7 @@ first message:
 
 ### Start with this Template
 
-Below is a template prompt you can use with or without
-`welcome-to-js.llm-context.md` to get your study sessions off to a good start:
+Below is a template prompt you can use to get your study sessions off to a good start:
 
 ```
 I would like to practice <skill>.
@@ -116,7 +115,7 @@ Here are some general tips for collaborating with LLMs when studying:
 
 ### Specific Strategies
 
-Welcome to JS will also introduce strategies for collaborating with generative
+Programming with Python will also introduce strategies for collaborating with generative
 AI on specific skills like debugging, documenting, logging, ... but only after
 you have practiced the skill without the help of AI. These strategies are
 included in each chapter where they fit best.
